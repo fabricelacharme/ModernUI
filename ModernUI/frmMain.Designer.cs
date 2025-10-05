@@ -31,22 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlSideMenu = new System.Windows.Forms.Panel();
-            
+            this.pnlSeparator = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnTools = new System.Windows.Forms.Button();
             this.pnlToolsSubMenu = new System.Windows.Forms.Panel();
             this.btnToolsHelp = new System.Windows.Forms.Button();
             this.btnToolsLibrary = new System.Windows.Forms.Button();
             this.btnToolsSettings = new System.Windows.Forms.Button();
-            this.btnTools = new System.Windows.Forms.Button();
-            
-            this.pnlSeparator = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            
             this.pnlMusicianSubMenu = new System.Windows.Forms.Panel();
             this.btnMusicianGuitar = new System.Windows.Forms.Button();
             this.btnMusicianPiano = new System.Windows.Forms.Button();
             this.btnMusicianChords = new System.Windows.Forms.Button();
             this.btnMusician = new System.Windows.Forms.Button();
-            
             this.pnlEditSubMenu = new System.Windows.Forms.Panel();
             this.btnEditDelete = new System.Windows.Forms.Button();
             this.btnEditLyrics = new System.Windows.Forms.Button();
@@ -80,9 +76,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLeft.SuspendLayout();
             this.pnlSideMenu.SuspendLayout();
-            this.pnlToolsSubMenu.SuspendLayout();
             this.pnlSeparator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlToolsSubMenu.SuspendLayout();
             this.pnlMusicianSubMenu.SuspendLayout();
             this.pnlEditSubMenu.SuspendLayout();
             this.pnlPlaylistsSubMenu.SuspendLayout();
@@ -101,16 +97,16 @@
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(220, 582);
+            this.pnlLeft.Size = new System.Drawing.Size(220, 661);
             this.pnlLeft.TabIndex = 0;
             // 
             // pnlSideMenu
             // 
             this.pnlSideMenu.AutoScroll = true;
             this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pnlSideMenu.Controls.Add(this.pnlToolsSubMenu);
-            this.pnlSideMenu.Controls.Add(this.btnTools);
             this.pnlSideMenu.Controls.Add(this.pnlSeparator);
+            this.pnlSideMenu.Controls.Add(this.btnTools);
+            this.pnlSideMenu.Controls.Add(this.pnlToolsSubMenu);
             this.pnlSideMenu.Controls.Add(this.pnlMusicianSubMenu);
             this.pnlSideMenu.Controls.Add(this.btnMusician);
             this.pnlSideMenu.Controls.Add(this.pnlEditSubMenu);
@@ -124,8 +120,48 @@
             this.pnlSideMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSideMenu.Location = new System.Drawing.Point(0, 80);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(220, 502);
+            this.pnlSideMenu.Size = new System.Drawing.Size(220, 581);
             this.pnlSideMenu.TabIndex = 0;
+            // 
+            // pnlSeparator
+            // 
+            this.pnlSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnlSeparator.Controls.Add(this.pictureBox2);
+            this.pnlSeparator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlSeparator.Location = new System.Drawing.Point(0, 820);
+            this.pnlSeparator.Name = "pnlSeparator";
+            this.pnlSeparator.Size = new System.Drawing.Size(203, 40);
+            this.pnlSeparator.TabIndex = 15;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(184, 4);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnTools
+            // 
+            this.btnTools.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnTools.FlatAppearance.BorderSize = 0;
+            this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTools.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTools.Image = global::ModernUI.Properties.Resources.gear_white32;
+            this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTools.Location = new System.Drawing.Point(0, 860);
+            this.btnTools.Name = "btnTools";
+            this.btnTools.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnTools.Size = new System.Drawing.Size(203, 60);
+            this.btnTools.TabIndex = 11;
+            this.btnTools.Tag = "mainMenu";
+            this.btnTools.Text = "Outils";
+            this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTools.UseVisualStyleBackColor = true;
+            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
             // 
             // pnlToolsSubMenu
             // 
@@ -133,8 +169,8 @@
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsHelp);
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsLibrary);
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsSettings);
-            this.pnlToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlToolsSubMenu.Location = new System.Drawing.Point(0, 860);
+            this.pnlToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlToolsSubMenu.Location = new System.Drawing.Point(0, 920);
             this.pnlToolsSubMenu.Name = "pnlToolsSubMenu";
             this.pnlToolsSubMenu.Size = new System.Drawing.Size(203, 120);
             this.pnlToolsSubMenu.TabIndex = 15;
@@ -197,46 +233,6 @@
             this.btnToolsSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnToolsSettings.UseVisualStyleBackColor = false;
             this.btnToolsSettings.Click += new System.EventHandler(this.btnToolsSettings_Click);
-            // 
-            // btnTools
-            // 
-            this.btnTools.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTools.FlatAppearance.BorderSize = 0;
-            this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTools.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnTools.Image = global::ModernUI.Properties.Resources.gear_white32;
-            this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.Location = new System.Drawing.Point(0, 860);
-            this.btnTools.Name = "btnTools";
-            this.btnTools.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnTools.Size = new System.Drawing.Size(203, 60);
-            this.btnTools.TabIndex = 11;
-            this.btnTools.Tag = "mainMenu";
-            this.btnTools.Text = "Outils";
-            this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTools.UseVisualStyleBackColor = true;
-            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
-            // 
-            // pnlSeparator
-            // 
-            this.pnlSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pnlSeparator.Controls.Add(this.pictureBox2);
-            this.pnlSeparator.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSeparator.Location = new System.Drawing.Point(0, 820);
-            this.pnlSeparator.Name = "pnlSeparator";
-            this.pnlSeparator.Size = new System.Drawing.Size(203, 40);
-            this.pnlSeparator.TabIndex = 15;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(8, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(184, 4);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // pnlMusicianSubMenu
             // 
@@ -694,7 +690,7 @@
             this.pnlBottom.Controls.Add(this.label2);
             this.pnlBottom.Controls.Add(this.label1);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(220, 502);
+            this.pnlBottom.Location = new System.Drawing.Point(220, 581);
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(884, 80);
             this.pnlBottom.TabIndex = 3;
@@ -817,13 +813,13 @@
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(220, 80);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(884, 422);
+            this.pnlContent.Size = new System.Drawing.Size(884, 501);
             this.pnlContent.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(174, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(174, 69);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(530, 350);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -834,7 +830,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 582);
+            this.ClientSize = new System.Drawing.Size(1104, 661);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlBottom);
@@ -843,9 +839,9 @@
             this.Name = "frmMain";
             this.pnlLeft.ResumeLayout(false);
             this.pnlSideMenu.ResumeLayout(false);
-            this.pnlToolsSubMenu.ResumeLayout(false);
             this.pnlSeparator.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlToolsSubMenu.ResumeLayout(false);
             this.pnlMusicianSubMenu.ResumeLayout(false);
             this.pnlEditSubMenu.ResumeLayout(false);
             this.pnlPlaylistsSubMenu.ResumeLayout(false);
@@ -893,16 +889,20 @@
         private System.Windows.Forms.Button btnMusicianGuitar;
         private System.Windows.Forms.Panel pnlMusicianSubMenu;
 
-        private System.Windows.Forms.Panel pnlSeparator;
+        
+
+        
+        
+
+        private System.Windows.Forms.Panel pnlBottom;
 
         private System.Windows.Forms.Button btnTools;
         private System.Windows.Forms.Button btnToolsSettings;
         private System.Windows.Forms.Button btnToolsLibrary;
         private System.Windows.Forms.Button btnToolsHelp;
         private System.Windows.Forms.Panel pnlToolsSubMenu;
-        
 
-        private System.Windows.Forms.Panel pnlBottom;
+        private System.Windows.Forms.Panel pnlSeparator;
 
         private System.Windows.Forms.Panel pnlTitleBar;
         private System.Windows.Forms.Label lblTitle;

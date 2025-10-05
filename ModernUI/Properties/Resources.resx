@@ -124,17 +124,11 @@
   <data name="search_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minus_white28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minus_white28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="playlists_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playlists_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cross_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cross_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="square_white28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\square_white28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
