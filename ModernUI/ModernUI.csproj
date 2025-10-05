@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC6E5766-5EE4-451C-B496-05500BD2E25D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ModernUI</RootNamespace>
+    <AssemblyName>ModernUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frmToolsLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmToolsLibrary.Designer.cs">
+      <DependentUpon>frmToolsLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmArtists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmArtists.Designer.cs">
+      <DependentUpon>frmArtists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChords.Designer.cs">
+      <DependentUpon>frmChords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEdit.Designer.cs">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFiles.Designer.cs">
+      <DependentUpon>frmFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGuitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGuitar.Designer.cs">
+      <DependentUpon>frmGuitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPiano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPiano.Designer.cs">
+      <DependentUpon>frmPiano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlayer.Designer.cs">
+      <DependentUpon>frmPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlaylists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlaylists.Designer.cs">
+      <DependentUpon>frmPlaylists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmToolsSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmToolsSettings.Designer.cs">
+      <DependentUpon>frmToolsSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTools.Designer.cs">
+      <DependentUpon>frmTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeColors.cs" />
+    <EmbeddedResource Include="Forms\frmToolsLibrary.resx">
+      <DependentUpon>frmToolsLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmArtists.resx">
+      <DependentUpon>frmArtists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChords.resx">
+      <DependentUpon>frmChords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFiles.resx">
+      <DependentUpon>frmFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGuitar.resx">
+      <DependentUpon>frmGuitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPiano.resx">
+      <DependentUpon>frmPiano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlayer.resx">
+      <DependentUpon>frmPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlaylists.resx">
+      <DependentUpon>frmPlaylists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmToolsSettings.resx">
+      <DependentUpon>frmToolsSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTools.resx">
+      <DependentUpon>frmTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playlists_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musician_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square_white28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus_white28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square_white10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus_white10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross_white10.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
