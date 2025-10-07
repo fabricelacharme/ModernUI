@@ -63,6 +63,26 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrowdown_white9 {
+            get {
+                object obj = ResourceManager.GetObject("arrowdown_white9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrowright_white9 {
+            get {
+                object obj = ResourceManager.GetObject("arrowright_white9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cloud_white32 {
             get {
                 object obj = ResourceManager.GetObject("cloud_white32", resourceCulture);

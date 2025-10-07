@@ -36,6 +36,7 @@
             this.btnTools = new System.Windows.Forms.Button();
             this.pnlToolsSubMenu = new System.Windows.Forms.Panel();
             this.btnToolsHelp = new System.Windows.Forms.Button();
+            this.btnToolsMidi = new System.Windows.Forms.Button();
             this.btnToolsLibrary = new System.Windows.Forms.Button();
             this.btnToolsSettings = new System.Windows.Forms.Button();
             this.pnlMusicianSubMenu = new System.Windows.Forms.Panel();
@@ -135,10 +136,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox2.Location = new System.Drawing.Point(8, 18);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(184, 4);
+            this.pictureBox2.Size = new System.Drawing.Size(184, 2);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -167,12 +168,13 @@
             // 
             this.pnlToolsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsHelp);
+            this.pnlToolsSubMenu.Controls.Add(this.btnToolsMidi);
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsLibrary);
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsSettings);
             this.pnlToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlToolsSubMenu.Location = new System.Drawing.Point(0, 920);
             this.pnlToolsSubMenu.Name = "pnlToolsSubMenu";
-            this.pnlToolsSubMenu.Size = new System.Drawing.Size(203, 120);
+            this.pnlToolsSubMenu.Size = new System.Drawing.Size(203, 160);
             this.pnlToolsSubMenu.TabIndex = 15;
             // 
             // btnToolsHelp
@@ -184,7 +186,7 @@
             this.btnToolsHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolsHelp.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnToolsHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolsHelp.Location = new System.Drawing.Point(0, 80);
+            this.btnToolsHelp.Location = new System.Drawing.Point(0, 120);
             this.btnToolsHelp.Name = "btnToolsHelp";
             this.btnToolsHelp.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
             this.btnToolsHelp.Size = new System.Drawing.Size(203, 40);
@@ -193,6 +195,26 @@
             this.btnToolsHelp.Text = "Aide";
             this.btnToolsHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnToolsHelp.UseVisualStyleBackColor = false;
+            // 
+            // btnToolsMidi
+            // 
+            this.btnToolsMidi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnToolsMidi.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnToolsMidi.FlatAppearance.BorderSize = 0;
+            this.btnToolsMidi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnToolsMidi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolsMidi.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnToolsMidi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnToolsMidi.Location = new System.Drawing.Point(0, 80);
+            this.btnToolsMidi.Name = "btnToolsMidi";
+            this.btnToolsMidi.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
+            this.btnToolsMidi.Size = new System.Drawing.Size(203, 40);
+            this.btnToolsMidi.TabIndex = 13;
+            this.btnToolsMidi.Tag = "subMenu";
+            this.btnToolsMidi.Text = "Midi";
+            this.btnToolsMidi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnToolsMidi.UseVisualStyleBackColor = false;
+            this.btnToolsMidi.Click += new System.EventHandler(this.btnToolsMidi_Click);
             // 
             // btnToolsLibrary
             // 
@@ -863,8 +885,7 @@
         private System.Windows.Forms.Panel pnlHome;        
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnFiles;
-        private System.Windows.Forms.Button btnSearch;        
-        
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnPlaylists;
         private System.Windows.Forms.Button btnPlaylistsNewPl;
         private System.Windows.Forms.Button btnPlaylistsDeletePl;
@@ -888,17 +909,14 @@
         private System.Windows.Forms.Button btnMusicianPiano;
         private System.Windows.Forms.Button btnMusicianGuitar;
         private System.Windows.Forms.Panel pnlMusicianSubMenu;
-
-        
-
-        
-        
+                        
 
         private System.Windows.Forms.Panel pnlBottom;
 
         private System.Windows.Forms.Button btnTools;
         private System.Windows.Forms.Button btnToolsSettings;
         private System.Windows.Forms.Button btnToolsLibrary;
+        private System.Windows.Forms.Button btnToolsMidi;
         private System.Windows.Forms.Button btnToolsHelp;
         private System.Windows.Forms.Panel pnlToolsSubMenu;
 

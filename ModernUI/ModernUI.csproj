@@ -112,6 +112,12 @@
     <Compile Include="Forms\frmSearch.Designer.cs">
       <DependentUpon>frmSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmToolsMidi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmToolsMidi.Designer.cs">
+      <DependentUpon>frmToolsMidi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmToolsSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="ThemeColors.cs" />
+    <Compile Include="btnTopMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="btnTopMenu.Designer.cs">
+      <DependentUpon>btnTopMenu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\frmToolsLibrary.resx">
       <DependentUpon>frmToolsLibrary.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +183,9 @@
     <EmbeddedResource Include="Forms\frmSearch.resx">
       <DependentUpon>frmSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmToolsMidi.resx">
+      <DependentUpon>frmToolsMidi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmToolsSettings.resx">
       <DependentUpon>frmToolsSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +199,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnTopMenu.resx">
+      <DependentUpon>btnTopMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -242,6 +260,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cross_white10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowright_white9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowdown_white9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

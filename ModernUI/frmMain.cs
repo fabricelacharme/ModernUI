@@ -20,6 +20,12 @@ namespace ModernUI
         private int tempIndex;
         private Form activeForm;
 
+        PictureBox imgArrowPlaylists;
+        PictureBox imgArrowEdit;
+        PictureBox imgArrowMusician;
+        PictureBox imgArrowTools;
+
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         
@@ -36,6 +42,54 @@ namespace ModernUI
             CustomizeDesign();
         }
 
+        /// <summary>
+        /// Load a second image for all buttons with submenu arrows
+        /// Ensure that the image will not be hidden behinf the vertical scrollbar when it appears
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            // Add a second image to the btnPlaylists button on the right side
+            imgArrowPlaylists = new PictureBox()
+            {
+                Image = Properties.Resources.arrowright_white9,
+                Size = new Size(9, 9),
+                SizeMode = PictureBoxSizeMode.CenterImage,
+                Location = new Point(btnPlaylists.Width - 30, (btnPlaylists.Height - 9) / 2),
+            };
+            btnPlaylists.Controls.Add(imgArrowPlaylists);
+
+            imgArrowEdit = new PictureBox()
+            {
+                Image = Properties.Resources.arrowright_white9,
+                Size = new Size(9, 9),
+                SizeMode = PictureBoxSizeMode.CenterImage,
+                Location = new Point(btnEdit.Width - 30, (btnEdit.Height - 9) / 2),
+            };
+            btnEdit.Controls.Add(imgArrowEdit);
+            
+            imgArrowMusician = new PictureBox()
+            {
+                Image = Properties.Resources.arrowright_white9,
+                Size = new Size(9, 9),
+                SizeMode = PictureBoxSizeMode.CenterImage,
+                Location = new Point(btnMusician.Width - 30, (btnMusician.Height - 9) / 2),
+            };
+            btnMusician.Controls.Add(imgArrowMusician);
+            
+            imgArrowTools = new PictureBox()
+            {
+                Image = Properties.Resources.arrowright_white9,
+                Size = new Size(9, 9),
+                SizeMode = PictureBoxSizeMode.CenterImage,
+                Location = new Point(btnTools.Width - 30, (btnTools.Height - 9) / 2),
+            };
+            btnTools.Controls.Add(imgArrowTools);
+
+
+        }
 
         private void CustomizeDesign()
         {
@@ -80,9 +134,7 @@ namespace ModernUI
             if (btnSender != null)
             {
                 if (currentButton != (Button)btnSender)
-                {
-                    
-
+                {                    
                     currentButton = (Button)btnSender;
 
                     if ((string)currentButton.Tag == "mainMenu")
@@ -93,12 +145,23 @@ namespace ModernUI
 
                         currentButton.BackColor = color;
                         currentButton.ForeColor = Color.White;
-                        currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        //currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
                         pnlTitleBar.BackColor = color;
                         btnHome.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
                         ThemeColors.PrimaryColor = color;
                         ThemeColors.SecondaryColor = ThemeColors.ChangeColorBrightness(color, -0.3);
+
+                        // Change image of buttons with submenu arrows
+                        if (currentButton == btnPlaylists)
+                            imgArrowPlaylists.Image = Properties.Resources.arrowdown_white9;
+                        else if (currentButton == btnEdit)
+                            imgArrowEdit.Image = Properties.Resources.arrowdown_white9;
+                        else if (currentButton == btnMusician)
+                            imgArrowMusician.Image = Properties.Resources.arrowdown_white9;
+                        else if (currentButton == btnTools)
+                            imgArrowTools.Image = Properties.Resources.arrowdown_white9;
+
                     }
                     else if ((string)currentButton.Tag == "subMenu")
                     {
@@ -107,10 +170,11 @@ namespace ModernUI
                         Color color = Color.LightBlue;
                         currentButton.BackColor = color;
                         currentButton.ForeColor = Color.White;
-                        currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        //currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         
                     }
                 }
+                
             }
         }
 
@@ -155,7 +219,18 @@ namespace ModernUI
                                                 
                         
                         previousBtn.ForeColor = Color.Gainsboro;
-                        previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        //previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+                        // Restore image of buttons with submenu arrows
+                        if (previousBtn == btnPlaylists)
+                            imgArrowPlaylists.Image = Properties.Resources.arrowright_white9;
+                        else if (previousBtn == btnEdit)
+                            imgArrowEdit.Image = Properties.Resources.arrowright_white9;
+                        else if (previousBtn == btnMusician)
+                            imgArrowMusician.Image = Properties.Resources.arrowright_white9;
+                        else if (previousBtn == btnTools)
+                            imgArrowTools.Image = Properties.Resources.arrowright_white9;
+
                     }
                 }
             }        
@@ -197,6 +272,7 @@ namespace ModernUI
             if (pnlEditSubMenu.Visible == true)
                 pnlEditSubMenu.Visible = false;                                        
         }
+        
         private void ShowSubMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
@@ -245,10 +321,21 @@ namespace ModernUI
 
 
         #region Playlists
+
         private void btnPlaylists_Click(object sender, EventArgs e)
-        {
+        {            
+            if (pnlPlaylistsSubMenu.Visible)
+            {
+                HideSubMenu();
+                imgArrowPlaylists.Image = Properties.Resources.arrowright_white9;
+
+                return;
+            }
+                
+
             ActivateButton(sender);
             ShowSubMenu(pnlPlaylistsSubMenu);
+            EnsureVisibility(pnlPlaylistsSubMenu);
             OpenChildForm(new Forms.frmPlaylists(), sender);
         }
 
@@ -263,8 +350,16 @@ namespace ModernUI
         #region Edition
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (pnlEditSubMenu.Visible)
+            {
+                HideSubMenu();
+                imgArrowEdit.Image = Properties.Resources.arrowright_white9;
+                return;
+            }
+
             ActivateButton(sender);
             ShowSubMenu(pnlEditSubMenu);
+            EnsureVisibility(pnlEditSubMenu);
             OpenChildForm(new Forms.frmFiles(), sender);
         }
 
@@ -274,6 +369,13 @@ namespace ModernUI
         #region Musician
         private void btnMusician_Click(object sender, EventArgs e)
         {
+            if (pnlMusicianSubMenu.Visible)
+            {
+                HideSubMenu();
+                imgArrowMusician.Image = Properties.Resources.arrowright_white9;
+                return;
+            }
+
             ActivateButton(sender);
             ShowSubMenu(pnlMusicianSubMenu);
             EnsureVisibility(pnlMusicianSubMenu);
@@ -310,6 +412,13 @@ namespace ModernUI
         /// <param name="e"></param>
         private void btnTools_Click(object sender, EventArgs e)
         {
+            if (pnlToolsSubMenu.Visible)
+            {
+                HideSubMenu();
+                imgArrowTools.Image = Properties.Resources.arrowright_white9;
+                return;
+            }
+
             ActivateButton(sender);
             ShowSubMenu(pnlToolsSubMenu);
 
@@ -331,9 +440,15 @@ namespace ModernUI
             OpenChildForm(new Forms.frmToolsLibrary(), sender);
         }
 
+        private void btnToolsMidi_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new Forms.frmToolsMidi(), sender);
+        }
+
         #endregion Tools
 
-       
+
         private void EnsureVisibility(Panel panel)
         {
             // ensure that the bottom of the panel is visible
@@ -394,5 +509,9 @@ namespace ModernUI
         {
             this.WindowState = FormWindowState.Minimized;   
         }
+
+        
+
+       
     }
 }
