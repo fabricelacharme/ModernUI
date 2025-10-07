@@ -58,6 +58,7 @@ namespace ModernUI
                 Size = new Size(9, 9),
                 SizeMode = PictureBoxSizeMode.CenterImage,
                 Location = new Point(btnPlaylists.Width - 30, (btnPlaylists.Height - 9) / 2),
+                BackColor = Color.Transparent
             };
             btnPlaylists.Controls.Add(imgArrowPlaylists);
 
@@ -67,6 +68,7 @@ namespace ModernUI
                 Size = new Size(9, 9),
                 SizeMode = PictureBoxSizeMode.CenterImage,
                 Location = new Point(btnEdit.Width - 30, (btnEdit.Height - 9) / 2),
+                BackColor = Color.Transparent
             };
             btnEdit.Controls.Add(imgArrowEdit);
             
@@ -76,6 +78,7 @@ namespace ModernUI
                 Size = new Size(9, 9),
                 SizeMode = PictureBoxSizeMode.CenterImage,
                 Location = new Point(btnMusician.Width - 30, (btnMusician.Height - 9) / 2),
+                BackColor = Color.Transparent
             };
             btnMusician.Controls.Add(imgArrowMusician);
             
@@ -85,6 +88,7 @@ namespace ModernUI
                 Size = new Size(9, 9),
                 SizeMode = PictureBoxSizeMode.CenterImage,
                 Location = new Point(btnTools.Width - 30, (btnTools.Height - 9) / 2),
+                BackColor = Color.Transparent
             };
             btnTools.Controls.Add(imgArrowTools);
 
