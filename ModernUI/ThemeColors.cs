@@ -72,7 +72,33 @@ namespace ModernUI
 
         };
 
-        public static Color ChangeColorBrightness(Color color, double correctionFactor)
+
+        // create my own palette
+        public static List<string> ColorList3 = new List<string>()
+        {
+            "#FF5733",
+            "#33FF57",
+            "#3357FF",
+            "#F1C40F",
+            "#8E44AD",
+            "#E74C3C",
+            "#2ECC71",
+            "#3498DB",
+            "#1ABC9C",
+            "#9B59B6",
+            "#E67E22",
+            "#34495E",
+            "#16A085",
+            "#27AE60",
+            "#2980B9",
+            "#8E44AD",
+            "#2C3E50",
+            "#D35400",
+            "#C0392B",
+            "#7F8C8D"
+        };
+
+    public static Color ChangeColorBrightness(Color color, double correctionFactor)
         {
             double red = color.R;
             double green = color.G;
