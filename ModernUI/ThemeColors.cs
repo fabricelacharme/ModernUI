@@ -43,6 +43,35 @@ namespace ModernUI
             "#B71C46"
         };
 
+        public static List<string> ColorList2 = new List<string>()
+        {
+            "#99b433",
+            "#00a300",
+            "#1e7145",
+            "#00aba9",
+            "#ff0097",
+            "#9f00a7",
+            "#7e3878",
+            "#603cba",
+            "#1d1d1d",
+            "#00aba9",
+            "#eff4ff",
+            "#2d89ef",
+            "#2b5797",
+            "#ffc40d",
+            "#e3a21a",
+            "#da532c",
+            "#ee1111",
+            "#a20025",
+            "#b91d47",
+
+
+
+
+
+
+        };
+
         public static Color ChangeColorBrightness(Color color, double correctionFactor)
         {
             double red = color.R;
