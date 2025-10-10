@@ -12,7 +12,7 @@ namespace ModernUI
         public static Color PrimaryColor { get; set; }
         public static Color SecondaryColor { get; set; }
 
-        public static List<string> ColorList = new List<string>()
+        public static List<string> ColorList1 = new List<string>()
         {
             "#3F51B5",
             "#009688",
@@ -43,6 +43,7 @@ namespace ModernUI
             "#B71C46"
         };
 
+        // Modern UI color palette
         public static List<string> ColorList2 = new List<string>()
         {
             "#99b433",
@@ -96,6 +97,15 @@ namespace ModernUI
             "#D35400",
             "#C0392B",
             "#7F8C8D"
+        };
+
+        public static List<string> ColorList = new List<string>()
+        {
+            "#ADE25D",
+            "#133C55",
+            "#95A3A4",
+            "#FFB100",
+            "#F6511D",
         };
 
     public static Color ChangeColorBrightness(Color color, double correctionFactor)
