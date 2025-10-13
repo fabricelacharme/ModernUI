@@ -25,6 +25,34 @@ namespace ModernUI
         PictureBox imgArrowMusician;
         PictureBox imgArrowTools;
 
+        // Source https://colorkit.co/palette/1abc9c-16a085-2ecc71-27ae60-3498db-2980b9-9b59b6-8e44ad-34495e-2c3e50-f1c40f-f39c12-e67e22-d35400-e74c3c-c0392b-ecf0f1-bdc3c7-95a5a6-7f8c8d/
+
+        
+        
+        // Define colors for each main menu button
+        private Color TitleBarHomeColor = Color.FromArgb(44, 62, 80); // 
+        private Color HomeColor = Color.FromArgb(29, 29, 29); // Dark gray #1d1d1d
+        private Color HomeTextColor = Color.FromArgb(255, 196, 13); // Yellow #ffc40d
+
+        private Color MainMenuDefaultColor = Color.FromArgb(44, 62, 80); // Dark blue gray #2c3e50
+
+        private Color ExplorerColor = Color.FromArgb(46, 204, 113); // Green #2ecc71 
+        private Color SearchColor = Color.FromArgb(52, 152, 219); // 
+        private Color ArtistsColor = Color.FromArgb(96, 60, 186); // Purple #9b59b6
+        private Color PlayColor = Color.FromArgb(41, 128, 185); // Blue #2980b9
+
+        private Color PlaylistsColor= Color.FromArgb(192, 57, 43); // Red #c0392b
+        private Color EditColor = Color.FromArgb(26, 188, 156); // Turquoise #1abc9c
+        private Color MusicianColor = Color.FromArgb(211, 84, 0); // Dark orange #d35400
+        private Color ToolsColor = Color.FromArgb(41, 128, 185); // Blue #2980b9
+
+        // Define colors for submenu buttons
+        private Color SubMenuColor = Color.FromArgb(189, 195, 199); // #bdc3c7
+        //private Color SubMenuHoverColor = Color.FromArgb(60, 60, 80); // #3c3c50
+        private Color SubMenuDefaultColor = Color.FromArgb(127, 140, 141); // #7f8c8d
+
+
+
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -135,6 +163,8 @@ namespace ModernUI
 
         private void ActivateButton(object btnSender)
         {
+            
+
             if (btnSender != null)
             {
                 if (currentButton != (Button)btnSender)
@@ -145,23 +175,44 @@ namespace ModernUI
                     {
                         DisableButton();
 
-                        Color color = SelectThemeColor();
+                        Color color = HomeColor;
+                        // Select color according to selected menu
+                        if (currentButton == btnFiles)
+                            color = ExplorerColor;
+                        else if (currentButton == btnSearch)
+                            color = SearchColor;
+                        else if (currentButton == btnArtists)
+                            color = ArtistsColor;
+                        else if (currentButton == btnPlay)
+                            color = PlayColor;
+                        else if (currentButton == btnPlaylists)
+                            color = PlaylistsColor;
+                        else if (currentButton == btnEdit)
+                            color = EditColor;
+                        else if (currentButton == btnMusician)
+                            color = MusicianColor;
+                        else if (currentButton == btnTools)
+                            color = ToolsColor;
 
+                        // Select random color
+                        //color = SelectThemeColor();
                         currentButton.BackColor = color;
                         currentButton.ForeColor = Color.White;
+                        btnHome.ForeColor = Color.Gainsboro;
                         //currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
-                        pnlTitleBar.BackColor = color;
+                        pnlTitleBar.BackColor = color;                        
                         btnHome.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
-                        ThemeColors.PrimaryColor = color;
-                        ThemeColors.SecondaryColor = ThemeColors.ChangeColorBrightness(color, -0.3);
+                        
+                        //ThemeColors.PrimaryColor = color;
+                        //ThemeColors.SecondaryColor = ThemeColors.ChangeColorBrightness(color, -0.3);
 
                     }
                     else if ((string)currentButton.Tag == "subMenu")
                     {
                         DisableSubButtons();
 
-                        Color color = Color.LightBlue;
+                        Color color = SubMenuColor;
                         currentButton.BackColor = color;
                         currentButton.ForeColor = Color.White;
                         //currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,14 +248,13 @@ namespace ModernUI
                         // Reset button to default state depending if it is located in the main side menu or in a submenu
                         // Maybe refactor this later to avoid the if-else with tags ?                        
                         if ((string)previousBtn.Tag == "subMenu")
-                        {
-                            //previousBtn.BackColor = Color.FromArgb(39, 39, 58);
-                            previousBtn.BackColor = Color.FromArgb(96, 125, 139);
+                        {                            
+                            previousBtn.BackColor = SubMenuDefaultColor;
 
                         }
                         else if ((string)previousBtn.Tag == "mainMenu")
                         {
-                            previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                            previousBtn.BackColor = MainMenuDefaultColor;
                             
                         }
                                                                         
@@ -229,8 +279,7 @@ namespace ModernUI
                         // Maybe refactor this later to avoid the if-else with tags ?                        
                         if ((string)previousBtn.Tag == "subMenu")
                         {
-                            //previousBtn.BackColor = Color.FromArgb(39, 39, 58);
-                            previousBtn.BackColor = Color.FromArgb(96, 125, 139);
+                            previousBtn.BackColor = SubMenuDefaultColor;
                         }                        
                     }
                 }
@@ -453,8 +502,9 @@ namespace ModernUI
         {            
             DisableButton();            
             lblTitle.Text = "HOME";
-            pnlTitleBar.BackColor = Color.FromArgb(0, 150, 136);            
-            btnHome.BackColor = Color.FromArgb(39, 39, 58);
+            pnlTitleBar.BackColor = TitleBarHomeColor;           
+            btnHome.BackColor = HomeColor;
+            btnHome.ForeColor = HomeTextColor;
             currentButton = null;
             
         }

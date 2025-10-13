@@ -98,13 +98,13 @@
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(220, 661);
+            this.pnlLeft.Size = new System.Drawing.Size(190, 661);
             this.pnlLeft.TabIndex = 0;
             // 
             // pnlSideMenu
             // 
             this.pnlSideMenu.AutoScroll = true;
-            this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.pnlSideMenu.Controls.Add(this.pnlSeparator);
             this.pnlSideMenu.Controls.Add(this.btnTools);
             this.pnlSideMenu.Controls.Add(this.pnlToolsSubMenu);
@@ -121,17 +121,17 @@
             this.pnlSideMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSideMenu.Location = new System.Drawing.Point(0, 80);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(220, 581);
+            this.pnlSideMenu.Size = new System.Drawing.Size(190, 581);
             this.pnlSideMenu.TabIndex = 0;
             // 
             // pnlSeparator
             // 
-            this.pnlSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnlSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.pnlSeparator.Controls.Add(this.pictureBox2);
             this.pnlSeparator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlSeparator.Location = new System.Drawing.Point(0, 820);
             this.pnlSeparator.Name = "pnlSeparator";
-            this.pnlSeparator.Size = new System.Drawing.Size(203, 40);
+            this.pnlSeparator.Size = new System.Drawing.Size(173, 40);
             this.pnlSeparator.TabIndex = 15;
             // 
             // pictureBox2
@@ -145,6 +145,7 @@
             // 
             // btnTools
             // 
+            this.btnTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnTools.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnTools.FlatAppearance.BorderSize = 0;
             this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -154,13 +155,13 @@
             this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTools.Location = new System.Drawing.Point(0, 860);
             this.btnTools.Name = "btnTools";
-            this.btnTools.Size = new System.Drawing.Size(203, 60);
+            this.btnTools.Size = new System.Drawing.Size(173, 60);
             this.btnTools.TabIndex = 11;
             this.btnTools.Tag = "mainMenu";
             this.btnTools.Text = "  Outils";
             this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTools.UseVisualStyleBackColor = true;
+            this.btnTools.UseVisualStyleBackColor = false;
             this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
             // 
             // pnlToolsSubMenu
@@ -173,12 +174,12 @@
             this.pnlToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlToolsSubMenu.Location = new System.Drawing.Point(0, 920);
             this.pnlToolsSubMenu.Name = "pnlToolsSubMenu";
-            this.pnlToolsSubMenu.Size = new System.Drawing.Size(203, 160);
+            this.pnlToolsSubMenu.Size = new System.Drawing.Size(173, 160);
             this.pnlToolsSubMenu.TabIndex = 15;
             // 
             // btnToolsHelp
             // 
-            this.btnToolsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnToolsHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnToolsHelp.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnToolsHelp.FlatAppearance.BorderSize = 0;
             this.btnToolsHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -188,7 +189,7 @@
             this.btnToolsHelp.Location = new System.Drawing.Point(0, 120);
             this.btnToolsHelp.Name = "btnToolsHelp";
             this.btnToolsHelp.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnToolsHelp.Size = new System.Drawing.Size(203, 40);
+            this.btnToolsHelp.Size = new System.Drawing.Size(173, 40);
             this.btnToolsHelp.TabIndex = 14;
             this.btnToolsHelp.Tag = "subMenu";
             this.btnToolsHelp.Text = "Aide";
@@ -197,7 +198,7 @@
             // 
             // btnToolsMidi
             // 
-            this.btnToolsMidi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnToolsMidi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnToolsMidi.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnToolsMidi.FlatAppearance.BorderSize = 0;
             this.btnToolsMidi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -207,7 +208,7 @@
             this.btnToolsMidi.Location = new System.Drawing.Point(0, 80);
             this.btnToolsMidi.Name = "btnToolsMidi";
             this.btnToolsMidi.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnToolsMidi.Size = new System.Drawing.Size(203, 40);
+            this.btnToolsMidi.Size = new System.Drawing.Size(173, 40);
             this.btnToolsMidi.TabIndex = 13;
             this.btnToolsMidi.Tag = "subMenu";
             this.btnToolsMidi.Text = "Midi";
@@ -217,7 +218,7 @@
             // 
             // btnToolsLibrary
             // 
-            this.btnToolsLibrary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnToolsLibrary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnToolsLibrary.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnToolsLibrary.FlatAppearance.BorderSize = 0;
             this.btnToolsLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -227,7 +228,7 @@
             this.btnToolsLibrary.Location = new System.Drawing.Point(0, 40);
             this.btnToolsLibrary.Name = "btnToolsLibrary";
             this.btnToolsLibrary.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnToolsLibrary.Size = new System.Drawing.Size(203, 40);
+            this.btnToolsLibrary.Size = new System.Drawing.Size(173, 40);
             this.btnToolsLibrary.TabIndex = 13;
             this.btnToolsLibrary.Tag = "subMenu";
             this.btnToolsLibrary.Text = "Gérer la bibliothèque";
@@ -237,7 +238,7 @@
             // 
             // btnToolsSettings
             // 
-            this.btnToolsSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnToolsSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnToolsSettings.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnToolsSettings.FlatAppearance.BorderSize = 0;
             this.btnToolsSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -247,7 +248,7 @@
             this.btnToolsSettings.Location = new System.Drawing.Point(0, 0);
             this.btnToolsSettings.Name = "btnToolsSettings";
             this.btnToolsSettings.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnToolsSettings.Size = new System.Drawing.Size(203, 40);
+            this.btnToolsSettings.Size = new System.Drawing.Size(173, 40);
             this.btnToolsSettings.TabIndex = 13;
             this.btnToolsSettings.Tag = "subMenu";
             this.btnToolsSettings.Text = "Paramètres";
@@ -264,12 +265,12 @@
             this.pnlMusicianSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMusicianSubMenu.Location = new System.Drawing.Point(0, 700);
             this.pnlMusicianSubMenu.Name = "pnlMusicianSubMenu";
-            this.pnlMusicianSubMenu.Size = new System.Drawing.Size(203, 120);
+            this.pnlMusicianSubMenu.Size = new System.Drawing.Size(173, 120);
             this.pnlMusicianSubMenu.TabIndex = 14;
             // 
             // btnMusicianGuitar
             // 
-            this.btnMusicianGuitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnMusicianGuitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnMusicianGuitar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMusicianGuitar.FlatAppearance.BorderSize = 0;
             this.btnMusicianGuitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -279,7 +280,7 @@
             this.btnMusicianGuitar.Location = new System.Drawing.Point(0, 80);
             this.btnMusicianGuitar.Name = "btnMusicianGuitar";
             this.btnMusicianGuitar.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnMusicianGuitar.Size = new System.Drawing.Size(203, 40);
+            this.btnMusicianGuitar.Size = new System.Drawing.Size(173, 40);
             this.btnMusicianGuitar.TabIndex = 13;
             this.btnMusicianGuitar.Tag = "subMenu";
             this.btnMusicianGuitar.Text = "Guitare";
@@ -289,7 +290,7 @@
             // 
             // btnMusicianPiano
             // 
-            this.btnMusicianPiano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnMusicianPiano.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnMusicianPiano.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMusicianPiano.FlatAppearance.BorderSize = 0;
             this.btnMusicianPiano.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -299,7 +300,7 @@
             this.btnMusicianPiano.Location = new System.Drawing.Point(0, 40);
             this.btnMusicianPiano.Name = "btnMusicianPiano";
             this.btnMusicianPiano.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnMusicianPiano.Size = new System.Drawing.Size(203, 40);
+            this.btnMusicianPiano.Size = new System.Drawing.Size(173, 40);
             this.btnMusicianPiano.TabIndex = 12;
             this.btnMusicianPiano.Tag = "subMenu";
             this.btnMusicianPiano.Text = "Piano";
@@ -309,7 +310,7 @@
             // 
             // btnMusicianChords
             // 
-            this.btnMusicianChords.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnMusicianChords.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnMusicianChords.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMusicianChords.FlatAppearance.BorderSize = 0;
             this.btnMusicianChords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -319,7 +320,7 @@
             this.btnMusicianChords.Location = new System.Drawing.Point(0, 0);
             this.btnMusicianChords.Name = "btnMusicianChords";
             this.btnMusicianChords.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnMusicianChords.Size = new System.Drawing.Size(203, 40);
+            this.btnMusicianChords.Size = new System.Drawing.Size(173, 40);
             this.btnMusicianChords.TabIndex = 11;
             this.btnMusicianChords.Tag = "subMenu";
             this.btnMusicianChords.Text = "Accords";
@@ -329,6 +330,7 @@
             // 
             // btnMusician
             // 
+            this.btnMusician.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnMusician.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMusician.FlatAppearance.BorderSize = 0;
             this.btnMusician.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -338,13 +340,13 @@
             this.btnMusician.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMusician.Location = new System.Drawing.Point(0, 640);
             this.btnMusician.Name = "btnMusician";
-            this.btnMusician.Size = new System.Drawing.Size(203, 60);
+            this.btnMusician.Size = new System.Drawing.Size(173, 60);
             this.btnMusician.TabIndex = 10;
             this.btnMusician.Tag = "mainMenu";
             this.btnMusician.Text = "  Musicien";
             this.btnMusician.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMusician.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMusician.UseVisualStyleBackColor = true;
+            this.btnMusician.UseVisualStyleBackColor = false;
             this.btnMusician.Click += new System.EventHandler(this.btnMusician_Click);
             // 
             // pnlEditSubMenu
@@ -358,7 +360,7 @@
             this.pnlEditSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEditSubMenu.Location = new System.Drawing.Point(0, 520);
             this.pnlEditSubMenu.Name = "pnlEditSubMenu";
-            this.pnlEditSubMenu.Size = new System.Drawing.Size(203, 120);
+            this.pnlEditSubMenu.Size = new System.Drawing.Size(173, 120);
             this.pnlEditSubMenu.TabIndex = 9;
             // 
             // btnEditDelete
@@ -373,7 +375,7 @@
             this.btnEditDelete.Location = new System.Drawing.Point(0, 160);
             this.btnEditDelete.Name = "btnEditDelete";
             this.btnEditDelete.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnEditDelete.Size = new System.Drawing.Size(203, 40);
+            this.btnEditDelete.Size = new System.Drawing.Size(173, 40);
             this.btnEditDelete.TabIndex = 11;
             this.btnEditDelete.Text = "Supprimer";
             this.btnEditDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -391,7 +393,7 @@
             this.btnEditLyrics.Location = new System.Drawing.Point(0, 120);
             this.btnEditLyrics.Name = "btnEditLyrics";
             this.btnEditLyrics.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnEditLyrics.Size = new System.Drawing.Size(203, 40);
+            this.btnEditLyrics.Size = new System.Drawing.Size(173, 40);
             this.btnEditLyrics.TabIndex = 11;
             this.btnEditLyrics.Text = "Modifier les paroles";
             this.btnEditLyrics.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -399,7 +401,7 @@
             // 
             // btnEditAddToPl
             // 
-            this.btnEditAddToPl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnEditAddToPl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnEditAddToPl.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEditAddToPl.FlatAppearance.BorderSize = 0;
             this.btnEditAddToPl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -409,7 +411,7 @@
             this.btnEditAddToPl.Location = new System.Drawing.Point(0, 80);
             this.btnEditAddToPl.Name = "btnEditAddToPl";
             this.btnEditAddToPl.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnEditAddToPl.Size = new System.Drawing.Size(203, 40);
+            this.btnEditAddToPl.Size = new System.Drawing.Size(173, 40);
             this.btnEditAddToPl.TabIndex = 11;
             this.btnEditAddToPl.Tag = "subMenu";
             this.btnEditAddToPl.Text = "Ajouter à la playlist";
@@ -418,7 +420,7 @@
             // 
             // btnEditNew
             // 
-            this.btnEditNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnEditNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnEditNew.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEditNew.FlatAppearance.BorderSize = 0;
             this.btnEditNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -428,7 +430,7 @@
             this.btnEditNew.Location = new System.Drawing.Point(0, 40);
             this.btnEditNew.Name = "btnEditNew";
             this.btnEditNew.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnEditNew.Size = new System.Drawing.Size(203, 40);
+            this.btnEditNew.Size = new System.Drawing.Size(173, 40);
             this.btnEditNew.TabIndex = 11;
             this.btnEditNew.Tag = "subMenu";
             this.btnEditNew.Text = "Nouveau";
@@ -437,7 +439,7 @@
             // 
             // btnEditModify
             // 
-            this.btnEditModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnEditModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnEditModify.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEditModify.FlatAppearance.BorderSize = 0;
             this.btnEditModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -447,7 +449,7 @@
             this.btnEditModify.Location = new System.Drawing.Point(0, 0);
             this.btnEditModify.Name = "btnEditModify";
             this.btnEditModify.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnEditModify.Size = new System.Drawing.Size(203, 40);
+            this.btnEditModify.Size = new System.Drawing.Size(173, 40);
             this.btnEditModify.TabIndex = 11;
             this.btnEditModify.Tag = "subMenu";
             this.btnEditModify.Text = "Modifier";
@@ -456,6 +458,7 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnEdit.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -465,13 +468,13 @@
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEdit.Location = new System.Drawing.Point(0, 460);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(203, 60);
+            this.btnEdit.Size = new System.Drawing.Size(173, 60);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Tag = "mainMenu";
             this.btnEdit.Text = "  Editer";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // pnlPlaylistsSubMenu
@@ -484,12 +487,12 @@
             this.pnlPlaylistsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPlaylistsSubMenu.Location = new System.Drawing.Point(0, 300);
             this.pnlPlaylistsSubMenu.Name = "pnlPlaylistsSubMenu";
-            this.pnlPlaylistsSubMenu.Size = new System.Drawing.Size(203, 160);
+            this.pnlPlaylistsSubMenu.Size = new System.Drawing.Size(173, 160);
             this.pnlPlaylistsSubMenu.TabIndex = 4;
             // 
             // btnPlaylistsDeleteFld
             // 
-            this.btnPlaylistsDeleteFld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnPlaylistsDeleteFld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnPlaylistsDeleteFld.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPlaylistsDeleteFld.FlatAppearance.BorderSize = 0;
             this.btnPlaylistsDeleteFld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -499,7 +502,7 @@
             this.btnPlaylistsDeleteFld.Location = new System.Drawing.Point(0, 120);
             this.btnPlaylistsDeleteFld.Name = "btnPlaylistsDeleteFld";
             this.btnPlaylistsDeleteFld.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnPlaylistsDeleteFld.Size = new System.Drawing.Size(203, 40);
+            this.btnPlaylistsDeleteFld.Size = new System.Drawing.Size(173, 40);
             this.btnPlaylistsDeleteFld.TabIndex = 12;
             this.btnPlaylistsDeleteFld.Tag = "subMenu";
             this.btnPlaylistsDeleteFld.Text = "Supprimer le dossier";
@@ -508,7 +511,7 @@
             // 
             // btnPlaylistsNewFld
             // 
-            this.btnPlaylistsNewFld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnPlaylistsNewFld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnPlaylistsNewFld.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPlaylistsNewFld.FlatAppearance.BorderSize = 0;
             this.btnPlaylistsNewFld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -518,7 +521,7 @@
             this.btnPlaylistsNewFld.Location = new System.Drawing.Point(0, 80);
             this.btnPlaylistsNewFld.Name = "btnPlaylistsNewFld";
             this.btnPlaylistsNewFld.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnPlaylistsNewFld.Size = new System.Drawing.Size(203, 40);
+            this.btnPlaylistsNewFld.Size = new System.Drawing.Size(173, 40);
             this.btnPlaylistsNewFld.TabIndex = 13;
             this.btnPlaylistsNewFld.Tag = "subMenu";
             this.btnPlaylistsNewFld.Text = "Nouveau dossier";
@@ -527,7 +530,7 @@
             // 
             // btnPlaylistsDeletePl
             // 
-            this.btnPlaylistsDeletePl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnPlaylistsDeletePl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnPlaylistsDeletePl.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPlaylistsDeletePl.FlatAppearance.BorderSize = 0;
             this.btnPlaylistsDeletePl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -537,7 +540,7 @@
             this.btnPlaylistsDeletePl.Location = new System.Drawing.Point(0, 40);
             this.btnPlaylistsDeletePl.Name = "btnPlaylistsDeletePl";
             this.btnPlaylistsDeletePl.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnPlaylistsDeletePl.Size = new System.Drawing.Size(203, 40);
+            this.btnPlaylistsDeletePl.Size = new System.Drawing.Size(173, 40);
             this.btnPlaylistsDeletePl.TabIndex = 14;
             this.btnPlaylistsDeletePl.Tag = "subMenu";
             this.btnPlaylistsDeletePl.Text = "Supprimer la liste";
@@ -546,7 +549,7 @@
             // 
             // btnPlaylistsNewPl
             // 
-            this.btnPlaylistsNewPl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnPlaylistsNewPl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.btnPlaylistsNewPl.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPlaylistsNewPl.FlatAppearance.BorderSize = 0;
             this.btnPlaylistsNewPl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -556,7 +559,7 @@
             this.btnPlaylistsNewPl.Location = new System.Drawing.Point(0, 0);
             this.btnPlaylistsNewPl.Name = "btnPlaylistsNewPl";
             this.btnPlaylistsNewPl.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.btnPlaylistsNewPl.Size = new System.Drawing.Size(203, 40);
+            this.btnPlaylistsNewPl.Size = new System.Drawing.Size(173, 40);
             this.btnPlaylistsNewPl.TabIndex = 4;
             this.btnPlaylistsNewPl.Tag = "subMenu";
             this.btnPlaylistsNewPl.Text = "Nouvelle liste";
@@ -567,6 +570,7 @@
             // 
             // btnPlaylists
             // 
+            this.btnPlaylists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnPlaylists.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPlaylists.FlatAppearance.BorderSize = 0;
             this.btnPlaylists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -576,17 +580,18 @@
             this.btnPlaylists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylists.Location = new System.Drawing.Point(0, 240);
             this.btnPlaylists.Name = "btnPlaylists";
-            this.btnPlaylists.Size = new System.Drawing.Size(203, 60);
+            this.btnPlaylists.Size = new System.Drawing.Size(173, 60);
             this.btnPlaylists.TabIndex = 4;
             this.btnPlaylists.Tag = "mainMenu";
             this.btnPlaylists.Text = "  Listes de lecture";
             this.btnPlaylists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylists.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPlaylists.UseVisualStyleBackColor = true;
+            this.btnPlaylists.UseVisualStyleBackColor = false;
             this.btnPlaylists.Click += new System.EventHandler(this.btnPlaylists_Click);
             // 
             // btnPlay
             // 
+            this.btnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnPlay.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPlay.FlatAppearance.BorderSize = 0;
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -596,17 +601,18 @@
             this.btnPlay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlay.Location = new System.Drawing.Point(0, 180);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(203, 60);
+            this.btnPlay.Size = new System.Drawing.Size(173, 60);
             this.btnPlay.TabIndex = 6;
             this.btnPlay.Tag = "mainMenu";
             this.btnPlay.Text = "  Jouer";
             this.btnPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnArtists
             // 
+            this.btnArtists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnArtists.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnArtists.FlatAppearance.BorderSize = 0;
             this.btnArtists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -616,17 +622,18 @@
             this.btnArtists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnArtists.Location = new System.Drawing.Point(0, 120);
             this.btnArtists.Name = "btnArtists";
-            this.btnArtists.Size = new System.Drawing.Size(203, 60);
+            this.btnArtists.Size = new System.Drawing.Size(173, 60);
             this.btnArtists.TabIndex = 5;
             this.btnArtists.Tag = "mainMenu";
             this.btnArtists.Text = "  Paroles et Artistes";
             this.btnArtists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnArtists.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnArtists.UseVisualStyleBackColor = true;
+            this.btnArtists.UseVisualStyleBackColor = false;
             this.btnArtists.Click += new System.EventHandler(this.btnArtists_Click);
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -636,17 +643,18 @@
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(0, 60);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(203, 60);
+            this.btnSearch.Size = new System.Drawing.Size(173, 60);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Tag = "mainMenu";
             this.btnSearch.Text = "  Rechercher";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnFiles
             // 
+            this.btnFiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnFiles.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFiles.FlatAppearance.BorderSize = 0;
             this.btnFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -656,13 +664,13 @@
             this.btnFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiles.Location = new System.Drawing.Point(0, 0);
             this.btnFiles.Name = "btnFiles";
-            this.btnFiles.Size = new System.Drawing.Size(203, 60);
+            this.btnFiles.Size = new System.Drawing.Size(173, 60);
             this.btnFiles.TabIndex = 3;
             this.btnFiles.Tag = "mainMenu";
             this.btnFiles.Text = "  Fichiers";
             this.btnFiles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFiles.UseVisualStyleBackColor = true;
+            this.btnFiles.UseVisualStyleBackColor = false;
             this.btnFiles.Click += new System.EventHandler(this.btnFiles_Click);
             // 
             // pnlHome
@@ -672,23 +680,23 @@
             this.pnlHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHome.Location = new System.Drawing.Point(0, 0);
             this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(220, 80);
+            this.pnlHome.Size = new System.Drawing.Size(190, 80);
             this.pnlHome.TabIndex = 0;
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::ModernUI.Properties.Resources.home_white32;
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
+            this.btnHome.Image = global::ModernUI.Properties.Resources.micro_white321;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(220, 80);
+            this.btnHome.Size = new System.Drawing.Size(190, 80);
             this.btnHome.TabIndex = 1;
             this.btnHome.Tag = "";
             this.btnHome.Text = "karaboss";
@@ -699,15 +707,15 @@
             // 
             // pnlBottom
             // 
-            this.pnlBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(77)))), ((int)(((byte)(91)))));
+            this.pnlBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.pnlBottom.Controls.Add(this.label4);
             this.pnlBottom.Controls.Add(this.label3);
             this.pnlBottom.Controls.Add(this.label2);
             this.pnlBottom.Controls.Add(this.label1);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(220, 581);
+            this.pnlBottom.Location = new System.Drawing.Point(190, 581);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(884, 80);
+            this.pnlBottom.Size = new System.Drawing.Size(914, 80);
             this.pnlBottom.TabIndex = 3;
             // 
             // label4
@@ -752,15 +760,15 @@
             // 
             // pnlTitleBar
             // 
-            this.pnlTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.pnlTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.pnlTitleBar.Controls.Add(this.btnMinimize);
             this.pnlTitleBar.Controls.Add(this.btnMaximize);
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Controls.Add(this.lblTitle);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.pnlTitleBar.Location = new System.Drawing.Point(190, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(884, 80);
+            this.pnlTitleBar.Size = new System.Drawing.Size(914, 80);
             this.pnlTitleBar.TabIndex = 1;
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
             // 
@@ -772,7 +780,7 @@
             this.btnMinimize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Image = global::ModernUI.Properties.Resources.minus_white10;
-            this.btnMinimize.Location = new System.Drawing.Point(790, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(820, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(30, 30);
             this.btnMinimize.TabIndex = 4;
@@ -787,7 +795,7 @@
             this.btnMaximize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximize.ForeColor = System.Drawing.Color.White;
             this.btnMaximize.Image = global::ModernUI.Properties.Resources.square_white10;
-            this.btnMaximize.Location = new System.Drawing.Point(820, 0);
+            this.btnMaximize.Location = new System.Drawing.Point(850, 0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(30, 30);
             this.btnMaximize.TabIndex = 3;
@@ -802,7 +810,7 @@
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(850, 0);
+            this.btnClose.Location = new System.Drawing.Point(880, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 2;
@@ -815,7 +823,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(406, 28);
+            this.lblTitle.Location = new System.Drawing.Point(421, 28);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(72, 24);
             this.lblTitle.TabIndex = 0;
@@ -826,15 +834,15 @@
             // 
             this.pnlContent.Controls.Add(this.pictureBox1);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(220, 80);
+            this.pnlContent.Location = new System.Drawing.Point(190, 80);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(884, 501);
+            this.pnlContent.Size = new System.Drawing.Size(914, 501);
             this.pnlContent.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(174, 69);
+            this.pictureBox1.Location = new System.Drawing.Point(189, 69);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(530, 350);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

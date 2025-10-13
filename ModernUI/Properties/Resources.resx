@@ -121,14 +121,17 @@
   <data name="pen_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pen_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cloud_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloud_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="musician_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\musician_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cross_white10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cross_white10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrowright_white9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrowright_white9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="micro_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\micro_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="playlists_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playlists_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +154,8 @@
   <data name="gear_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gear_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cloud_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cloud_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrowright_white9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrowright_white9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minus_white10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minus_white10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -162,5 +165,8 @@
   </data>
   <data name="arrowdown_white9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrowdown_white9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="micro_white321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\micro_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
