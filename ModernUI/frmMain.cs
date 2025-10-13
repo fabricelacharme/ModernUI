@@ -39,7 +39,7 @@ namespace ModernUI
         private Color ExplorerColor = Color.FromArgb(46, 204, 113); // Green #2ecc71 
         private Color SearchColor = Color.FromArgb(52, 152, 219); // 
         private Color ArtistsColor = Color.FromArgb(96, 60, 186); // Purple #9b59b6
-        private Color PlayColor = Color.FromArgb(41, 128, 185); // Blue #2980b9
+        private Color PlayColor = Color.FromArgb(127, 140, 141); // Gray #7f8c8d
 
         private Color PlaylistsColor= Color.FromArgb(192, 57, 43); // Red #c0392b
         private Color EditColor = Color.FromArgb(26, 188, 156); // Turquoise #1abc9c
