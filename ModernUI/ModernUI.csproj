@@ -270,5 +270,8 @@
   <ItemGroup>
     <None Include="Resources\micro_white32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\micro_yellow32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

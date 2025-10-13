@@ -162,9 +162,7 @@ namespace ModernUI
         }
 
         private void ActivateButton(object btnSender)
-        {
-            
-
+        {            
             if (btnSender != null)
             {
                 if (currentButton != (Button)btnSender)
@@ -203,9 +201,10 @@ namespace ModernUI
 
                         pnlTitleBar.BackColor = color;                        
                         btnHome.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
-                        
-                        //ThemeColors.PrimaryColor = color;
-                        //ThemeColors.SecondaryColor = ThemeColors.ChangeColorBrightness(color, -0.3);
+                        btnHome.Image = Properties.Resources.micro_white32;
+
+                        ThemeColors.PrimaryColor = color;
+                        ThemeColors.SecondaryColor = ThemeColors.ChangeColorBrightness(color, -0.3);
 
                     }
                     else if ((string)currentButton.Tag == "subMenu")
@@ -505,6 +504,7 @@ namespace ModernUI
             pnlTitleBar.BackColor = TitleBarHomeColor;           
             btnHome.BackColor = HomeColor;
             btnHome.ForeColor = HomeTextColor;
+            btnHome.Image = Properties.Resources.micro_yellow32;
             currentButton = null;
             
         }
