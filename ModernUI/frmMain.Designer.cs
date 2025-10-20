@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlSideMenu = new System.Windows.Forms.Panel();
             this.pnlSeparator = new System.Windows.Forms.Panel();
@@ -580,6 +579,7 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Image = global::ModernUI.Properties.Resources.minus_white10;
             this.btnMinimize.Location = new System.Drawing.Point(820, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(30, 30);
@@ -594,6 +594,7 @@
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximize.ForeColor = System.Drawing.Color.White;
+            this.btnMaximize.Image = global::ModernUI.Properties.Resources.square_white10;
             this.btnMaximize.Location = new System.Drawing.Point(850, 0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(30, 30);
@@ -640,7 +641,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Image = global::ModernUI.Properties.Resources.cross_white10;
             this.btnClose.Location = new System.Drawing.Point(880, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
@@ -770,7 +771,7 @@
             this.btnArtists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArtists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArtists.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnArtists.Image = global::ModernUI.Properties.Resources.sphere_2white32;
+            this.btnArtists.Image = global::ModernUI.Properties.Resources.sphere_white32;
             this.btnArtists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnArtists.Location = new System.Drawing.Point(0, 120);
             this.btnArtists.Name = "btnArtists";
