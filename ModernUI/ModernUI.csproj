@@ -226,9 +226,6 @@
     <None Include="Resources\home_white32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\files_white32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cloud_white32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -272,6 +269,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\micro_yellow32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_white30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_2white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools_2white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playlists_2white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musician_2white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_2white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_2white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sphere_2white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sphere_2white321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sphere_2white322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen_2white32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,8 +32,6 @@
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlSideMenu = new System.Windows.Forms.Panel();
             this.pnlSeparator = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnTools = new System.Windows.Forms.Button();
             this.pnlToolsSubMenu = new System.Windows.Forms.Panel();
             this.btnToolsHelp = new System.Windows.Forms.Button();
             this.btnToolsMidi = new System.Windows.Forms.Button();
@@ -43,26 +41,18 @@
             this.btnMusicianGuitar = new System.Windows.Forms.Button();
             this.btnMusicianPiano = new System.Windows.Forms.Button();
             this.btnMusicianChords = new System.Windows.Forms.Button();
-            this.btnMusician = new System.Windows.Forms.Button();
             this.pnlEditSubMenu = new System.Windows.Forms.Panel();
             this.btnEditDelete = new System.Windows.Forms.Button();
             this.btnEditLyrics = new System.Windows.Forms.Button();
             this.btnEditAddToPl = new System.Windows.Forms.Button();
             this.btnEditNew = new System.Windows.Forms.Button();
             this.btnEditModify = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.pnlPlaylistsSubMenu = new System.Windows.Forms.Panel();
             this.btnPlaylistsDeleteFld = new System.Windows.Forms.Button();
             this.btnPlaylistsNewFld = new System.Windows.Forms.Button();
             this.btnPlaylistsDeletePl = new System.Windows.Forms.Button();
             this.btnPlaylistsNewPl = new System.Windows.Forms.Button();
-            this.btnPlaylists = new System.Windows.Forms.Button();
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.btnArtists = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.btnFiles = new System.Windows.Forms.Button();
             this.pnlHome = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnlBottom = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,14 +61,23 @@
             this.pnlTitleBar = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnTools = new System.Windows.Forms.Button();
+            this.btnMusician = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnPlaylists = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.btnArtists = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnFiles = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pnlLeft.SuspendLayout();
             this.pnlSideMenu.SuspendLayout();
             this.pnlSeparator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlToolsSubMenu.SuspendLayout();
             this.pnlMusicianSubMenu.SuspendLayout();
             this.pnlEditSubMenu.SuspendLayout();
@@ -88,6 +87,7 @@
             this.pnlTitleBar.SuspendLayout();
             this.pnlContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -133,36 +133,6 @@
             this.pnlSeparator.Name = "pnlSeparator";
             this.pnlSeparator.Size = new System.Drawing.Size(173, 40);
             this.pnlSeparator.TabIndex = 15;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox2.Location = new System.Drawing.Point(8, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(184, 2);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnTools
-            // 
-            this.btnTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnTools.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnTools.FlatAppearance.BorderSize = 0;
-            this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTools.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnTools.Image = global::ModernUI.Properties.Resources.gear_white32;
-            this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.Location = new System.Drawing.Point(0, 860);
-            this.btnTools.Name = "btnTools";
-            this.btnTools.Size = new System.Drawing.Size(173, 60);
-            this.btnTools.TabIndex = 11;
-            this.btnTools.Tag = "mainMenu";
-            this.btnTools.Text = " Outils";
-            this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTools.UseVisualStyleBackColor = false;
-            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
             // 
             // pnlToolsSubMenu
             // 
@@ -328,27 +298,6 @@
             this.btnMusicianChords.UseVisualStyleBackColor = false;
             this.btnMusicianChords.Click += new System.EventHandler(this.btnMusicianChords_Click);
             // 
-            // btnMusician
-            // 
-            this.btnMusician.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnMusician.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMusician.FlatAppearance.BorderSize = 0;
-            this.btnMusician.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMusician.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMusician.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMusician.Image = global::ModernUI.Properties.Resources.musician_white32;
-            this.btnMusician.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMusician.Location = new System.Drawing.Point(0, 640);
-            this.btnMusician.Name = "btnMusician";
-            this.btnMusician.Size = new System.Drawing.Size(173, 60);
-            this.btnMusician.TabIndex = 10;
-            this.btnMusician.Tag = "mainMenu";
-            this.btnMusician.Text = " Musicien";
-            this.btnMusician.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMusician.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMusician.UseVisualStyleBackColor = false;
-            this.btnMusician.Click += new System.EventHandler(this.btnMusician_Click);
-            // 
             // pnlEditSubMenu
             // 
             this.pnlEditSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
@@ -456,27 +405,6 @@
             this.btnEditModify.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditModify.UseVisualStyleBackColor = false;
             // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEdit.Image = global::ModernUI.Properties.Resources.pen_white32;
-            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(0, 460);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(173, 60);
-            this.btnEdit.TabIndex = 7;
-            this.btnEdit.Tag = "mainMenu";
-            this.btnEdit.Text = " Editer";
-            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
             // pnlPlaylistsSubMenu
             // 
             this.pnlPlaylistsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
@@ -568,111 +496,6 @@
             this.btnPlaylistsNewPl.UseVisualStyleBackColor = false;
             this.btnPlaylistsNewPl.Click += new System.EventHandler(this.btnPlaylistsNewPl_Click);
             // 
-            // btnPlaylists
-            // 
-            this.btnPlaylists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnPlaylists.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPlaylists.FlatAppearance.BorderSize = 0;
-            this.btnPlaylists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlaylists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaylists.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPlaylists.Image = global::ModernUI.Properties.Resources.playlists_white32;
-            this.btnPlaylists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylists.Location = new System.Drawing.Point(0, 240);
-            this.btnPlaylists.Name = "btnPlaylists";
-            this.btnPlaylists.Size = new System.Drawing.Size(173, 60);
-            this.btnPlaylists.TabIndex = 4;
-            this.btnPlaylists.Tag = "mainMenu";
-            this.btnPlaylists.Text = " Listes de lecture";
-            this.btnPlaylists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylists.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPlaylists.UseVisualStyleBackColor = false;
-            this.btnPlaylists.Click += new System.EventHandler(this.btnPlaylists_Click);
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnPlay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPlay.FlatAppearance.BorderSize = 0;
-            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPlay.Image = global::ModernUI.Properties.Resources.play_white32;
-            this.btnPlay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlay.Location = new System.Drawing.Point(0, 180);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(173, 60);
-            this.btnPlay.TabIndex = 6;
-            this.btnPlay.Tag = "mainMenu";
-            this.btnPlay.Text = " Jouer";
-            this.btnPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPlay.UseVisualStyleBackColor = false;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
-            // btnArtists
-            // 
-            this.btnArtists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnArtists.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnArtists.FlatAppearance.BorderSize = 0;
-            this.btnArtists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArtists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArtists.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnArtists.Image = global::ModernUI.Properties.Resources.cloud_white32;
-            this.btnArtists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnArtists.Location = new System.Drawing.Point(0, 120);
-            this.btnArtists.Name = "btnArtists";
-            this.btnArtists.Size = new System.Drawing.Size(173, 60);
-            this.btnArtists.TabIndex = 5;
-            this.btnArtists.Tag = "mainMenu";
-            this.btnArtists.Text = " Paroles et Artistes";
-            this.btnArtists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnArtists.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnArtists.UseVisualStyleBackColor = false;
-            this.btnArtists.Click += new System.EventHandler(this.btnArtists_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSearch.Image = global::ModernUI.Properties.Resources.search_white32;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(0, 60);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(173, 60);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Tag = "mainMenu";
-            this.btnSearch.Text = " Rechercher";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // btnFiles
-            // 
-            this.btnFiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnFiles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFiles.FlatAppearance.BorderSize = 0;
-            this.btnFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiles.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFiles.Image = global::ModernUI.Properties.Resources.files_white32;
-            this.btnFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFiles.Location = new System.Drawing.Point(0, 0);
-            this.btnFiles.Name = "btnFiles";
-            this.btnFiles.Size = new System.Drawing.Size(173, 60);
-            this.btnFiles.TabIndex = 3;
-            this.btnFiles.Tag = "mainMenu";
-            this.btnFiles.Text = " Fichiers";
-            this.btnFiles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFiles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFiles.UseVisualStyleBackColor = false;
-            this.btnFiles.Click += new System.EventHandler(this.btnFiles_Click);
-            // 
             // pnlHome
             // 
             this.pnlHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
@@ -682,28 +505,6 @@
             this.pnlHome.Name = "pnlHome";
             this.pnlHome.Size = new System.Drawing.Size(190, 60);
             this.pnlHome.TabIndex = 0;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
-            this.btnHome.Image = global::ModernUI.Properties.Resources.micro_yellow32;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(190, 60);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Tag = "";
-            this.btnHome.Text = "karaboss";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pnlBottom
             // 
@@ -779,7 +580,6 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Image = global::ModernUI.Properties.Resources.minus_white10;
             this.btnMinimize.Location = new System.Drawing.Point(820, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(30, 30);
@@ -794,28 +594,12 @@
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Image = global::ModernUI.Properties.Resources.square_white10;
             this.btnMaximize.Location = new System.Drawing.Point(850, 0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(30, 30);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.UseVisualStyleBackColor = true;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(880, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
             // 
@@ -849,6 +633,220 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(880, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(184, 2);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnTools
+            // 
+            this.btnTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnTools.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnTools.FlatAppearance.BorderSize = 0;
+            this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTools.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTools.Image = global::ModernUI.Properties.Resources.tools_2white32;
+            this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTools.Location = new System.Drawing.Point(0, 860);
+            this.btnTools.Name = "btnTools";
+            this.btnTools.Size = new System.Drawing.Size(173, 60);
+            this.btnTools.TabIndex = 11;
+            this.btnTools.Tag = "mainMenu";
+            this.btnTools.Text = "Outils";
+            this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTools.UseVisualStyleBackColor = false;
+            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
+            // 
+            // btnMusician
+            // 
+            this.btnMusician.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnMusician.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMusician.FlatAppearance.BorderSize = 0;
+            this.btnMusician.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMusician.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMusician.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMusician.Image = global::ModernUI.Properties.Resources.musician_2white32;
+            this.btnMusician.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMusician.Location = new System.Drawing.Point(0, 640);
+            this.btnMusician.Name = "btnMusician";
+            this.btnMusician.Size = new System.Drawing.Size(173, 60);
+            this.btnMusician.TabIndex = 10;
+            this.btnMusician.Tag = "mainMenu";
+            this.btnMusician.Text = "Musicien";
+            this.btnMusician.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMusician.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMusician.UseVisualStyleBackColor = false;
+            this.btnMusician.Click += new System.EventHandler(this.btnMusician_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEdit.Image = global::ModernUI.Properties.Resources.pen_2white32;
+            this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.Location = new System.Drawing.Point(0, 460);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(173, 60);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Tag = "mainMenu";
+            this.btnEdit.Text = "Editer";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnPlaylists
+            // 
+            this.btnPlaylists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnPlaylists.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlaylists.FlatAppearance.BorderSize = 0;
+            this.btnPlaylists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlaylists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaylists.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPlaylists.Image = global::ModernUI.Properties.Resources.playlists_2white32;
+            this.btnPlaylists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlaylists.Location = new System.Drawing.Point(0, 240);
+            this.btnPlaylists.Name = "btnPlaylists";
+            this.btnPlaylists.Size = new System.Drawing.Size(173, 60);
+            this.btnPlaylists.TabIndex = 4;
+            this.btnPlaylists.Tag = "mainMenu";
+            this.btnPlaylists.Text = "Listes de lecture";
+            this.btnPlaylists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlaylists.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlaylists.UseVisualStyleBackColor = false;
+            this.btnPlaylists.Click += new System.EventHandler(this.btnPlaylists_Click);
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnPlay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPlay.FlatAppearance.BorderSize = 0;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlay.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPlay.Image = global::ModernUI.Properties.Resources.play_2white32;
+            this.btnPlay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlay.Location = new System.Drawing.Point(0, 180);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(173, 60);
+            this.btnPlay.TabIndex = 6;
+            this.btnPlay.Tag = "mainMenu";
+            this.btnPlay.Text = "Jouer";
+            this.btnPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPlay.UseVisualStyleBackColor = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
+            // btnArtists
+            // 
+            this.btnArtists.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnArtists.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnArtists.FlatAppearance.BorderSize = 0;
+            this.btnArtists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArtists.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArtists.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnArtists.Image = global::ModernUI.Properties.Resources.sphere_2white32;
+            this.btnArtists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnArtists.Location = new System.Drawing.Point(0, 120);
+            this.btnArtists.Name = "btnArtists";
+            this.btnArtists.Size = new System.Drawing.Size(173, 60);
+            this.btnArtists.TabIndex = 5;
+            this.btnArtists.Tag = "mainMenu";
+            this.btnArtists.Text = "Paroles et Artistes";
+            this.btnArtists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnArtists.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnArtists.UseVisualStyleBackColor = false;
+            this.btnArtists.Click += new System.EventHandler(this.btnArtists_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSearch.Image = global::ModernUI.Properties.Resources.search_2white32;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(0, 60);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(173, 60);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Tag = "mainMenu";
+            this.btnSearch.Text = "Rechercher";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnFiles
+            // 
+            this.btnFiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnFiles.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFiles.FlatAppearance.BorderSize = 0;
+            this.btnFiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiles.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFiles.Image = global::ModernUI.Properties.Resources.files_2white32;
+            this.btnFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFiles.Location = new System.Drawing.Point(0, 0);
+            this.btnFiles.Name = "btnFiles";
+            this.btnFiles.Size = new System.Drawing.Size(173, 60);
+            this.btnFiles.TabIndex = 3;
+            this.btnFiles.Tag = "mainMenu";
+            this.btnFiles.Text = "Fichiers";
+            this.btnFiles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFiles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFiles.UseVisualStyleBackColor = false;
+            this.btnFiles.Click += new System.EventHandler(this.btnFiles_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(13)))));
+            this.btnHome.Image = global::ModernUI.Properties.Resources.micro_yellow32;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(190, 60);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Tag = "";
+            this.btnHome.Text = "karaboss";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -863,7 +861,6 @@
             this.pnlLeft.ResumeLayout(false);
             this.pnlSideMenu.ResumeLayout(false);
             this.pnlSeparator.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlToolsSubMenu.ResumeLayout(false);
             this.pnlMusicianSubMenu.ResumeLayout(false);
             this.pnlEditSubMenu.ResumeLayout(false);
@@ -875,6 +872,7 @@
             this.pnlTitleBar.PerformLayout();
             this.pnlContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

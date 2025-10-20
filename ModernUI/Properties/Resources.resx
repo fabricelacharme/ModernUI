@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pen_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pen_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="files_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\files_2white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="musician_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\musician_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,6 +133,12 @@
   <data name="playlists_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playlists_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_2white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="files_white30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\files_white30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="micro_white321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\micro_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +147,18 @@
   </data>
   <data name="search_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square_white10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\square_white10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_2white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playlists_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playlists_2white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musician_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musician_2white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +169,17 @@
   <data name="arrowright_white9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrowright_white9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="square_white10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\square_white10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sphere_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sphere_2white322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tools_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tools_2white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gear_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gear_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="micro_yellow32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\micro_yellow32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cloud_white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cloud_white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +193,7 @@
   <data name="arrowdown_white9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrowdown_white9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="micro_yellow32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\micro_yellow32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pen_2white32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pen_2white32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
