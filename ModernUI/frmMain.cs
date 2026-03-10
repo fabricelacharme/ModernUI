@@ -127,8 +127,6 @@ namespace ModernUI
                 Enabled = false,
             };
             btnTools.Controls.Add(imgArrowTools);
-
-
         }
 
         private void CustomizeDesign()
@@ -148,9 +146,7 @@ namespace ModernUI
             this.FormBorderStyle = FormBorderStyle.Sizable;
 
             this.DoubleBuffered = true;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            
-
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;            
         }
 
         /// <summary>
@@ -172,7 +168,6 @@ namespace ModernUI
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
-
         }
 
         private void ActivateButton(object btnSender)
@@ -261,12 +256,10 @@ namespace ModernUI
                         if ((string)previousBtn.Tag == "subMenu")
                         {                            
                             previousBtn.BackColor = SubMenuDefaultColor;
-
                         }
                         else if ((string)previousBtn.Tag == "mainMenu")
                         {
-                            previousBtn.BackColor = MainMenuDefaultColor;
-                            
+                            previousBtn.BackColor = MainMenuDefaultColor;                            
                         }                                                                        
                         previousBtn.ForeColor = Color.Gainsboro;                        
                     }
@@ -274,7 +267,9 @@ namespace ModernUI
             }        
         }
 
-
+        /// <summary>
+        /// Default color for submenu buttons
+        /// </summary>
         private void DisableSubButtons()
         {
             Panel[] subMenus = { pnlEditSubMenu, pnlMusicianSubMenu, pnlToolsSubMenu };
@@ -296,27 +291,33 @@ namespace ModernUI
         }
 
 
-        private void HideSubMenus(bool bOnlyRight = false)
+        /// <summary>
+        /// Hides submenu panels by setting their visibility to false. Can optionally hide only submenus that are
+        /// designated as right-aligned.
+        /// </summary>
+        /// <remarks>When submenus are hidden, the associated arrow images are updated to indicate the
+        /// collapsed state. This method has no effect if the submenu collection is null.</remarks>
+        /// <param name="bOnlyRight">true to hide only submenus tagged as right-aligned; false to hide all submenus.</param>
+        private void HideSubMenus(bool bOnlyRightSubmenus = false)
         {
             if (subMenus == null) return;
             
             foreach (Panel panel in subMenus)
             {
-
-                if (bOnlyRight)
+                if (bOnlyRightSubmenus)
                 {
                     if (panel.Tag.ToString() == "SubMenuRight")
                     {
                         panel.Visible = false;
+                        // Only right-sided panels are masked. Right arrow only for them.
                         imgArrowPlaylists.Image = Properties.Resources.arrowright_white9;
                         imgArrowEdit.Image = Properties.Resources.arrowright_white9;
-
                     }
                 }
                 else
                 {
                     panel.Visible = false;
-
+                    // All the panels are masked => arrow picture is right arrow
                     imgArrowPlaylists.Image = Properties.Resources.arrowright_white9;
                     imgArrowEdit.Image = Properties.Resources.arrowright_white9;
                     imgArrowMusician.Image = Properties.Resources.arrowright_white9;
@@ -327,35 +328,39 @@ namespace ModernUI
         }
         
        
-
+        /// <summary>
+        /// Displays the specified submenu panel, ensuring that only one submenu is visible at a time. Hides the submenu
+        /// if it is already visible.
+        /// </summary>
+        /// <remarks>This method updates the visibility of submenu panels and associated arrow images to
+        /// reflect the current state of the user interface. If the submenu is already visible, it will be hidden
+        /// instead of shown.</remarks>
+        /// <param name="subMenu">The submenu panel to show or hide. Cannot be null.</param>
+        /// <param name="btn">An optional button that, if provided and the submenu is positioned to the right, determines the vertical
+        /// alignment of the submenu when displayed.</param>
         private void ShowSubMenu(Panel subMenu, Button btn = null)
         {
             if (subMenu.Visible == false)
             {
-                HideSubMenus();
-                                
+                HideSubMenus();                                
                 subMenu.Visible = true;
-                
-                
+                                
                 if (subMenu.Tag.ToString() == "SubMenuRight" && btn != null)
                 {
                     subMenu.BringToFront();
                     subMenu.Top = btn.Top;
                     subMenu.Left = 0;
                 }
-
                 EnsureVisibility(subMenu);
-
-
             }
             else
                 subMenu.Visible = false;
 
+            // Display arrows depending on the visibility of the submenu panel
             imgArrowPlaylists.Image = pnlPlaylistsSubMenu.Visible ? Properties.Resources.arrowdown_white9 : Properties.Resources.arrowright_white9;            
             imgArrowEdit.Image = pnlEditSubMenu.Visible ?  Properties.Resources.arrowdown_white9 : Properties.Resources.arrowright_white9;            
             imgArrowMusician.Image = pnlMusicianSubMenu.Visible ? Properties.Resources.arrowdown_white9 : Properties.Resources.arrowright_white9;
             imgArrowTools.Image = pnlToolsSubMenu.Visible ? Properties.Resources.arrowdown_white9 : Properties.Resources.arrowright_white9;
-
         }
 
 
@@ -630,6 +635,10 @@ namespace ModernUI
         #endregion buttons with submenus
 
 
+        /// <summary>
+        /// Ensure that the bottom of the panel is visible by modifying AutoscrollPosition od pnlSideMenu
+        /// </summary>
+        /// <param name="panel"></param>
         private void EnsureVisibility(Panel panel)
         {
             // ensure that the bottom of the panel is visible
@@ -641,6 +650,9 @@ namespace ModernUI
         }
 
 
+        /// <summary>
+        /// Click on the Home button
+        /// </summary>
         private void Reset()
         {            
             DisableButton();            
@@ -649,15 +661,18 @@ namespace ModernUI
             btnHome.BackColor = HomeColor;
             btnHome.ForeColor = HomeTextColor;
             btnHome.Image = Properties.Resources.micro_yellow32;
-            currentButton = null;
-            
+            currentButton = null;            
         }
 
         #region Titlebar
         
+        /// <summary>
+        /// Make it possible to move the form and maximize or minimize it
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
         {            
-
             if (e.Clicks == 2)
             {
                 if (MouseButtons == MouseButtons.Left)
@@ -675,12 +690,21 @@ namespace ModernUI
             }
         }
         
-
+        /// <summary>
+        /// Exit application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        /// <summary>
+        /// Modify windowstate
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMaximize_Click(object sender, EventArgs e)
         {
             if(WindowState == FormWindowState.Normal)
@@ -689,21 +713,23 @@ namespace ModernUI
                 WindowState = FormWindowState.Normal;
         }
 
+        /// <summary>
+        /// Minimize form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;   
         }
-
-
 
         #endregion Titlebar
 
 
         #region form load close
         private void frmMain_KeyDown(object sender, KeyEventArgs e)
-        {
-            
-            // Hide right submenus
+        {            
+            // Hide right submenus with escape key
             if (e.KeyCode == Keys.Escape)
             {
                 HideSubMenus(true);
