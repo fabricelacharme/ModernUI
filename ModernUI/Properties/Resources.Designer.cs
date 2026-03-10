@@ -63,9 +63,19 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cloud_white32 {
+        internal static System.Drawing.Bitmap arrowdown_white9 {
             get {
-                object obj = ResourceManager.GetObject("cloud_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("arrowdown_white9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrowright_white9 {
+            get {
+                object obj = ResourceManager.GetObject("arrowright_white9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap files_white32 {
+        internal static System.Drawing.Bitmap files_2white32 {
             get {
-                object obj = ResourceManager.GetObject("files_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("files_2white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +113,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap gear_white32 {
+        internal static System.Drawing.Bitmap micro_white32 {
             get {
-                object obj = ResourceManager.GetObject("gear_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("micro_white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +123,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_white32 {
+        internal static System.Drawing.Bitmap micro_yellow32 {
             get {
-                object obj = ResourceManager.GetObject("home_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("micro_yellow32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +143,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap minus_white28 {
+        internal static System.Drawing.Bitmap musician_2white32 {
             get {
-                object obj = ResourceManager.GetObject("minus_white28", resourceCulture);
+                object obj = ResourceManager.GetObject("musician_2white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +153,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap musician_white32 {
+        internal static System.Drawing.Bitmap pen_2white32 {
             get {
-                object obj = ResourceManager.GetObject("musician_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("pen_2white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +163,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pen_white32 {
+        internal static System.Drawing.Bitmap play_2white32 {
             get {
-                object obj = ResourceManager.GetObject("pen_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("play_2white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +173,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap play_white32 {
+        internal static System.Drawing.Bitmap playlists_2white32 {
             get {
-                object obj = ResourceManager.GetObject("play_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("playlists_2white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +183,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap playlists_white32 {
+        internal static System.Drawing.Bitmap search_2white32 {
             get {
-                object obj = ResourceManager.GetObject("playlists_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("search_2white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +193,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap search_white32 {
+        internal static System.Drawing.Bitmap sphere_white32 {
             get {
-                object obj = ResourceManager.GetObject("search_white32", resourceCulture);
+                object obj = ResourceManager.GetObject("sphere_white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +213,9 @@ namespace ModernUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap square_white28 {
+        internal static System.Drawing.Bitmap tools_2white32 {
             get {
-                object obj = ResourceManager.GetObject("square_white28", resourceCulture);
+                object obj = ResourceManager.GetObject("tools_2white32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
