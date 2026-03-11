@@ -2,6 +2,8 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 
 namespace ModernUI
@@ -56,6 +58,7 @@ namespace ModernUI
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
+
         #endregion dll
 
 
@@ -63,18 +66,13 @@ namespace ModernUI
         public frmMain()
         {
             InitializeComponent();
-
-            subMenus = new Panel[] { pnlPlaylistsSubMenu, pnlEditSubMenu, pnlMusicianSubMenu, pnlToolsSubMenu };
-            
-
-            
-                 
+            subMenus = new Panel[] { pnlPlaylistsSubMenu, pnlEditSubMenu, pnlMusicianSubMenu, pnlToolsSubMenu };                                         
             CustomizeDesign();
         }
 
        
 
-                /// <summary>
+        /// <summary>
         /// Load a second image for all buttons with submenu arrows
         /// Ensure that the image will not be hidden behinf the vertical scrollbar when it appears
         /// </summary>
@@ -139,11 +137,11 @@ namespace ModernUI
             // Panels on the right of the buttons
 
             this.Text = string.Empty;
-
             this.ControlBox = false;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.MaximizeBox = true;
+            this.MinimizeBox = true;
             this.FormBorderStyle = FormBorderStyle.Sizable;
+            
 
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;            
