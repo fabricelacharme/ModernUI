@@ -95,8 +95,9 @@
             this.pnlLeft.Controls.Add(this.pnlHome);
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnlLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(190, 691);
+            this.pnlLeft.Size = new System.Drawing.Size(285, 995);
             this.pnlLeft.TabIndex = 0;
             // 
             // pnlSideMenu
@@ -115,9 +116,10 @@
             this.pnlSideMenu.Controls.Add(this.btnSearch);
             this.pnlSideMenu.Controls.Add(this.btnFiles);
             this.pnlSideMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSideMenu.Location = new System.Drawing.Point(0, 60);
+            this.pnlSideMenu.Location = new System.Drawing.Point(0, 92);
+            this.pnlSideMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(190, 631);
+            this.pnlSideMenu.Size = new System.Drawing.Size(285, 903);
             this.pnlSideMenu.TabIndex = 0;
             // 
             // pnlSeparator
@@ -125,17 +127,19 @@
             this.pnlSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.pnlSeparator.Controls.Add(this.picSeparator);
             this.pnlSeparator.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlSeparator.Location = new System.Drawing.Point(0, 540);
+            this.pnlSeparator.Location = new System.Drawing.Point(0, 829);
+            this.pnlSeparator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlSeparator.Name = "pnlSeparator";
-            this.pnlSeparator.Size = new System.Drawing.Size(173, 40);
+            this.pnlSeparator.Size = new System.Drawing.Size(259, 62);
             this.pnlSeparator.TabIndex = 15;
             // 
             // picSeparator
             // 
             this.picSeparator.BackColor = System.Drawing.Color.Gainsboro;
-            this.picSeparator.Location = new System.Drawing.Point(6, 18);
+            this.picSeparator.Location = new System.Drawing.Point(9, 28);
+            this.picSeparator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picSeparator.Name = "picSeparator";
-            this.picSeparator.Size = new System.Drawing.Size(178, 2);
+            this.picSeparator.Size = new System.Drawing.Size(267, 3);
             this.picSeparator.TabIndex = 0;
             this.picSeparator.TabStop = false;
             // 
@@ -149,9 +153,10 @@
             this.btnTools.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnTools.Image = global::ModernUI.Properties.Resources.tools_2white32;
             this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.Location = new System.Drawing.Point(0, 580);
+            this.btnTools.Location = new System.Drawing.Point(0, 891);
+            this.btnTools.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTools.Name = "btnTools";
-            this.btnTools.Size = new System.Drawing.Size(173, 60);
+            this.btnTools.Size = new System.Drawing.Size(259, 92);
             this.btnTools.TabIndex = 11;
             this.btnTools.Tag = "mainMenu";
             this.btnTools.Text = "Outils";
@@ -168,9 +173,10 @@
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsLibrary);
             this.pnlToolsSubMenu.Controls.Add(this.btnToolsSettings);
             this.pnlToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlToolsSubMenu.Location = new System.Drawing.Point(0, 640);
+            this.pnlToolsSubMenu.Location = new System.Drawing.Point(0, 983);
+            this.pnlToolsSubMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlToolsSubMenu.Name = "pnlToolsSubMenu";
-            this.pnlToolsSubMenu.Size = new System.Drawing.Size(173, 160);
+            this.pnlToolsSubMenu.Size = new System.Drawing.Size(259, 246);
             this.pnlToolsSubMenu.TabIndex = 15;
             this.pnlToolsSubMenu.Tag = "SubMenuBelow";
             // 
@@ -183,10 +189,11 @@
             this.btnToolsHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolsHelp.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnToolsHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolsHelp.Location = new System.Drawing.Point(0, 120);
+            this.btnToolsHelp.Location = new System.Drawing.Point(0, 186);
+            this.btnToolsHelp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnToolsHelp.Name = "btnToolsHelp";
-            this.btnToolsHelp.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnToolsHelp.Size = new System.Drawing.Size(173, 40);
+            this.btnToolsHelp.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnToolsHelp.Size = new System.Drawing.Size(259, 62);
             this.btnToolsHelp.TabIndex = 14;
             this.btnToolsHelp.Tag = "subMenu";
             this.btnToolsHelp.Text = "Aide";
@@ -203,10 +210,11 @@
             this.btnToolsMidi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolsMidi.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnToolsMidi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolsMidi.Location = new System.Drawing.Point(0, 80);
+            this.btnToolsMidi.Location = new System.Drawing.Point(0, 124);
+            this.btnToolsMidi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnToolsMidi.Name = "btnToolsMidi";
-            this.btnToolsMidi.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnToolsMidi.Size = new System.Drawing.Size(173, 40);
+            this.btnToolsMidi.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnToolsMidi.Size = new System.Drawing.Size(259, 62);
             this.btnToolsMidi.TabIndex = 13;
             this.btnToolsMidi.Tag = "subMenu";
             this.btnToolsMidi.Text = "Midi";
@@ -223,10 +231,11 @@
             this.btnToolsLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToolsLibrary.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnToolsLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnToolsLibrary.Location = new System.Drawing.Point(0, 40);
+            this.btnToolsLibrary.Location = new System.Drawing.Point(0, 62);
+            this.btnToolsLibrary.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnToolsLibrary.Name = "btnToolsLibrary";
-            this.btnToolsLibrary.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnToolsLibrary.Size = new System.Drawing.Size(173, 40);
+            this.btnToolsLibrary.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnToolsLibrary.Size = new System.Drawing.Size(259, 62);
             this.btnToolsLibrary.TabIndex = 13;
             this.btnToolsLibrary.Tag = "subMenu";
             this.btnToolsLibrary.Text = "Gérer la bibliothèque";
@@ -244,9 +253,10 @@
             this.btnToolsSettings.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnToolsSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnToolsSettings.Location = new System.Drawing.Point(0, 0);
+            this.btnToolsSettings.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnToolsSettings.Name = "btnToolsSettings";
-            this.btnToolsSettings.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnToolsSettings.Size = new System.Drawing.Size(173, 40);
+            this.btnToolsSettings.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnToolsSettings.Size = new System.Drawing.Size(259, 62);
             this.btnToolsSettings.TabIndex = 13;
             this.btnToolsSettings.Tag = "subMenu";
             this.btnToolsSettings.Text = "Paramètres";
@@ -261,9 +271,10 @@
             this.pnlMusicianSubMenu.Controls.Add(this.btnMusicianPiano);
             this.pnlMusicianSubMenu.Controls.Add(this.btnMusicianChords);
             this.pnlMusicianSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlMusicianSubMenu.Location = new System.Drawing.Point(0, 420);
+            this.pnlMusicianSubMenu.Location = new System.Drawing.Point(0, 644);
+            this.pnlMusicianSubMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlMusicianSubMenu.Name = "pnlMusicianSubMenu";
-            this.pnlMusicianSubMenu.Size = new System.Drawing.Size(173, 120);
+            this.pnlMusicianSubMenu.Size = new System.Drawing.Size(259, 185);
             this.pnlMusicianSubMenu.TabIndex = 14;
             this.pnlMusicianSubMenu.Tag = "SubMenuBelow";
             // 
@@ -276,10 +287,11 @@
             this.btnMusicianGuitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMusicianGuitar.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMusicianGuitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMusicianGuitar.Location = new System.Drawing.Point(0, 80);
+            this.btnMusicianGuitar.Location = new System.Drawing.Point(0, 124);
+            this.btnMusicianGuitar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMusicianGuitar.Name = "btnMusicianGuitar";
-            this.btnMusicianGuitar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnMusicianGuitar.Size = new System.Drawing.Size(173, 40);
+            this.btnMusicianGuitar.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnMusicianGuitar.Size = new System.Drawing.Size(259, 62);
             this.btnMusicianGuitar.TabIndex = 13;
             this.btnMusicianGuitar.Tag = "subMenu";
             this.btnMusicianGuitar.Text = "Guitare";
@@ -296,10 +308,11 @@
             this.btnMusicianPiano.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMusicianPiano.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMusicianPiano.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMusicianPiano.Location = new System.Drawing.Point(0, 40);
+            this.btnMusicianPiano.Location = new System.Drawing.Point(0, 62);
+            this.btnMusicianPiano.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMusicianPiano.Name = "btnMusicianPiano";
-            this.btnMusicianPiano.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnMusicianPiano.Size = new System.Drawing.Size(173, 40);
+            this.btnMusicianPiano.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnMusicianPiano.Size = new System.Drawing.Size(259, 62);
             this.btnMusicianPiano.TabIndex = 12;
             this.btnMusicianPiano.Tag = "subMenu";
             this.btnMusicianPiano.Text = "Piano";
@@ -317,9 +330,10 @@
             this.btnMusicianChords.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMusicianChords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMusicianChords.Location = new System.Drawing.Point(0, 0);
+            this.btnMusicianChords.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMusicianChords.Name = "btnMusicianChords";
-            this.btnMusicianChords.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnMusicianChords.Size = new System.Drawing.Size(173, 40);
+            this.btnMusicianChords.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnMusicianChords.Size = new System.Drawing.Size(259, 62);
             this.btnMusicianChords.TabIndex = 11;
             this.btnMusicianChords.Tag = "subMenu";
             this.btnMusicianChords.Text = "Accords";
@@ -337,9 +351,10 @@
             this.btnMusician.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMusician.Image = global::ModernUI.Properties.Resources.musician_2white32;
             this.btnMusician.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMusician.Location = new System.Drawing.Point(0, 360);
+            this.btnMusician.Location = new System.Drawing.Point(0, 552);
+            this.btnMusician.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMusician.Name = "btnMusician";
-            this.btnMusician.Size = new System.Drawing.Size(173, 60);
+            this.btnMusician.Size = new System.Drawing.Size(259, 92);
             this.btnMusician.TabIndex = 10;
             this.btnMusician.Tag = "mainMenu";
             this.btnMusician.Text = "Musicien";
@@ -359,9 +374,10 @@
             this.btnEdit.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEdit.Image = global::ModernUI.Properties.Resources.pen_2white32;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(0, 300);
+            this.btnEdit.Location = new System.Drawing.Point(0, 460);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(173, 60);
+            this.btnEdit.Size = new System.Drawing.Size(259, 92);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Tag = "mainMenu";
             this.btnEdit.Text = "Editer";
@@ -383,9 +399,10 @@
             this.btnPlaylists.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPlaylists.Image = global::ModernUI.Properties.Resources.playlists_2white32;
             this.btnPlaylists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylists.Location = new System.Drawing.Point(0, 240);
+            this.btnPlaylists.Location = new System.Drawing.Point(0, 368);
+            this.btnPlaylists.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPlaylists.Name = "btnPlaylists";
-            this.btnPlaylists.Size = new System.Drawing.Size(173, 60);
+            this.btnPlaylists.Size = new System.Drawing.Size(259, 92);
             this.btnPlaylists.TabIndex = 4;
             this.btnPlaylists.Tag = "mainMenu";
             this.btnPlaylists.Text = "Listes de lecture";
@@ -406,9 +423,10 @@
             this.btnPlay.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPlay.Image = global::ModernUI.Properties.Resources.play_2white32;
             this.btnPlay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlay.Location = new System.Drawing.Point(0, 180);
+            this.btnPlay.Location = new System.Drawing.Point(0, 276);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(173, 60);
+            this.btnPlay.Size = new System.Drawing.Size(259, 92);
             this.btnPlay.TabIndex = 6;
             this.btnPlay.Tag = "mainMenu";
             this.btnPlay.Text = "Jouer";
@@ -427,9 +445,10 @@
             this.btnArtists.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnArtists.Image = global::ModernUI.Properties.Resources.sphere_white32;
             this.btnArtists.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnArtists.Location = new System.Drawing.Point(0, 120);
+            this.btnArtists.Location = new System.Drawing.Point(0, 184);
+            this.btnArtists.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnArtists.Name = "btnArtists";
-            this.btnArtists.Size = new System.Drawing.Size(173, 60);
+            this.btnArtists.Size = new System.Drawing.Size(259, 92);
             this.btnArtists.TabIndex = 5;
             this.btnArtists.Tag = "mainMenu";
             this.btnArtists.Text = "Paroles et Artistes";
@@ -448,9 +467,10 @@
             this.btnSearch.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSearch.Image = global::ModernUI.Properties.Resources.search_2white32;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(0, 60);
+            this.btnSearch.Location = new System.Drawing.Point(0, 92);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(173, 60);
+            this.btnSearch.Size = new System.Drawing.Size(259, 92);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Tag = "mainMenu";
             this.btnSearch.Text = "Rechercher";
@@ -470,8 +490,9 @@
             this.btnFiles.Image = global::ModernUI.Properties.Resources.files_2white32;
             this.btnFiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiles.Location = new System.Drawing.Point(0, 0);
+            this.btnFiles.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFiles.Name = "btnFiles";
-            this.btnFiles.Size = new System.Drawing.Size(173, 60);
+            this.btnFiles.Size = new System.Drawing.Size(259, 92);
             this.btnFiles.TabIndex = 3;
             this.btnFiles.Tag = "mainMenu";
             this.btnFiles.Text = "Fichiers";
@@ -486,8 +507,9 @@
             this.pnlHome.Controls.Add(this.btnHome);
             this.pnlHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHome.Location = new System.Drawing.Point(0, 0);
+            this.pnlHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlHome.Name = "pnlHome";
-            this.pnlHome.Size = new System.Drawing.Size(190, 60);
+            this.pnlHome.Size = new System.Drawing.Size(285, 92);
             this.pnlHome.TabIndex = 0;
             // 
             // btnHome
@@ -502,8 +524,9 @@
             this.btnHome.Image = global::ModernUI.Properties.Resources.micro_yellow32;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(190, 60);
+            this.btnHome.Size = new System.Drawing.Size(285, 92);
             this.btnHome.TabIndex = 1;
             this.btnHome.Tag = "";
             this.btnHome.Text = "karaboss";
@@ -519,9 +542,10 @@
             this.pnlPlaylistsSubMenu.Controls.Add(this.btnPFolderlNew);
             this.pnlPlaylistsSubMenu.Controls.Add(this.btnPlDelete);
             this.pnlPlaylistsSubMenu.Controls.Add(this.btnPlNew);
-            this.pnlPlaylistsSubMenu.Location = new System.Drawing.Point(6, 299);
+            this.pnlPlaylistsSubMenu.Location = new System.Drawing.Point(9, 460);
+            this.pnlPlaylistsSubMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlPlaylistsSubMenu.Name = "pnlPlaylistsSubMenu";
-            this.pnlPlaylistsSubMenu.Size = new System.Drawing.Size(170, 166);
+            this.pnlPlaylistsSubMenu.Size = new System.Drawing.Size(255, 255);
             this.pnlPlaylistsSubMenu.TabIndex = 1;
             this.pnlPlaylistsSubMenu.Tag = "SubMenuRight";
             this.pnlPlaylistsSubMenu.Visible = false;
@@ -535,10 +559,11 @@
             this.btnPlFolderDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlFolderDelete.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPlFolderDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlFolderDelete.Location = new System.Drawing.Point(1, 122);
+            this.btnPlFolderDelete.Location = new System.Drawing.Point(2, 188);
+            this.btnPlFolderDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPlFolderDelete.Name = "btnPlFolderDelete";
-            this.btnPlFolderDelete.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnPlFolderDelete.Size = new System.Drawing.Size(167, 40);
+            this.btnPlFolderDelete.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnPlFolderDelete.Size = new System.Drawing.Size(250, 62);
             this.btnPlFolderDelete.TabIndex = 16;
             this.btnPlFolderDelete.Tag = "subMenu";
             this.btnPlFolderDelete.Text = "Supprimer le dossier";
@@ -554,10 +579,11 @@
             this.btnPFolderlNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPFolderlNew.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPFolderlNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPFolderlNew.Location = new System.Drawing.Point(1, 82);
+            this.btnPFolderlNew.Location = new System.Drawing.Point(2, 126);
+            this.btnPFolderlNew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPFolderlNew.Name = "btnPFolderlNew";
-            this.btnPFolderlNew.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnPFolderlNew.Size = new System.Drawing.Size(167, 40);
+            this.btnPFolderlNew.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnPFolderlNew.Size = new System.Drawing.Size(250, 62);
             this.btnPFolderlNew.TabIndex = 17;
             this.btnPFolderlNew.Tag = "subMenu";
             this.btnPFolderlNew.Text = "Nouveau dossier";
@@ -573,10 +599,11 @@
             this.btnPlDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlDelete.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPlDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlDelete.Location = new System.Drawing.Point(1, 42);
+            this.btnPlDelete.Location = new System.Drawing.Point(2, 65);
+            this.btnPlDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPlDelete.Name = "btnPlDelete";
-            this.btnPlDelete.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnPlDelete.Size = new System.Drawing.Size(167, 40);
+            this.btnPlDelete.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnPlDelete.Size = new System.Drawing.Size(250, 62);
             this.btnPlDelete.TabIndex = 18;
             this.btnPlDelete.Tag = "subMenu";
             this.btnPlDelete.Text = "Supprimer la liste";
@@ -592,10 +619,11 @@
             this.btnPlNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlNew.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPlNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlNew.Location = new System.Drawing.Point(0, 2);
+            this.btnPlNew.Location = new System.Drawing.Point(0, 3);
+            this.btnPlNew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPlNew.Name = "btnPlNew";
-            this.btnPlNew.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnPlNew.Size = new System.Drawing.Size(167, 40);
+            this.btnPlNew.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnPlNew.Size = new System.Drawing.Size(250, 62);
             this.btnPlNew.TabIndex = 15;
             this.btnPlNew.Tag = "subMenu";
             this.btnPlNew.Text = "Nouvelle liste";
@@ -612,18 +640,20 @@
             this.pnlBottom.Controls.Add(this.label2);
             this.pnlBottom.Controls.Add(this.label1);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottom.Location = new System.Drawing.Point(190, 611);
+            this.pnlBottom.Location = new System.Drawing.Point(285, 872);
+            this.pnlBottom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlBottom.Name = "pnlBottom";
-            this.pnlBottom.Size = new System.Drawing.Size(914, 80);
+            this.pnlBottom.Size = new System.Drawing.Size(1371, 123);
             this.pnlBottom.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(4, 53);
+            this.label4.Location = new System.Drawing.Point(6, 82);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(81, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Lyrics: yes";
             // 
@@ -631,9 +661,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(4, 38);
+            this.label3.Location = new System.Drawing.Point(6, 58);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 13);
+            this.label3.Size = new System.Drawing.Size(118, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Duration: 02:56";
             // 
@@ -641,9 +672,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(4, 23);
+            this.label2.Location = new System.Drawing.Point(6, 35);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Format: 0";
             // 
@@ -651,9 +683,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(4, 8);
+            this.label1.Location = new System.Drawing.Point(6, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tracks: 12";
             // 
@@ -665,9 +698,10 @@
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Controls.Add(this.lblTitle);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(190, 0);
+            this.pnlTitleBar.Location = new System.Drawing.Point(285, 0);
+            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(914, 60);
+            this.pnlTitleBar.Size = new System.Drawing.Size(1371, 92);
             this.pnlTitleBar.TabIndex = 1;
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
             // 
@@ -679,9 +713,10 @@
             this.btnMinimize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Image = global::ModernUI.Properties.Resources.minus_white10;
-            this.btnMinimize.Location = new System.Drawing.Point(820, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(1230, 0);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 46);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -694,9 +729,10 @@
             this.btnMaximize.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximize.ForeColor = System.Drawing.Color.White;
             this.btnMaximize.Image = global::ModernUI.Properties.Resources.square_white10;
-            this.btnMaximize.Location = new System.Drawing.Point(850, 0);
+            this.btnMaximize.Location = new System.Drawing.Point(1275, 0);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
+            this.btnMaximize.Size = new System.Drawing.Size(45, 46);
             this.btnMaximize.TabIndex = 3;
             this.btnMaximize.UseVisualStyleBackColor = true;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
@@ -709,9 +745,10 @@
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = global::ModernUI.Properties.Resources.cross_white10;
-            this.btnClose.Location = new System.Drawing.Point(880, 0);
+            this.btnClose.Location = new System.Drawing.Point(1320, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.Size = new System.Drawing.Size(45, 46);
             this.btnClose.TabIndex = 2;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -722,9 +759,10 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(421, 18);
+            this.lblTitle.Location = new System.Drawing.Point(632, 28);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(72, 24);
+            this.lblTitle.Size = new System.Drawing.Size(113, 39);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "HOME";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -736,9 +774,10 @@
             this.pnlContent.Controls.Add(this.pnlPlaylistsSubMenu);
             this.pnlContent.Controls.Add(this.pictureBox1);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(190, 60);
+            this.pnlContent.Location = new System.Drawing.Point(285, 92);
+            this.pnlContent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(914, 551);
+            this.pnlContent.Size = new System.Drawing.Size(1371, 780);
             this.pnlContent.TabIndex = 2;
             // 
             // pnlEditSubMenu
@@ -747,9 +786,10 @@
             this.pnlEditSubMenu.Controls.Add(this.btnEditAddToPl);
             this.pnlEditSubMenu.Controls.Add(this.btnEditNew);
             this.pnlEditSubMenu.Controls.Add(this.btnEditModify);
-            this.pnlEditSubMenu.Location = new System.Drawing.Point(7, 172);
+            this.pnlEditSubMenu.Location = new System.Drawing.Point(10, 265);
+            this.pnlEditSubMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlEditSubMenu.Name = "pnlEditSubMenu";
-            this.pnlEditSubMenu.Size = new System.Drawing.Size(170, 126);
+            this.pnlEditSubMenu.Size = new System.Drawing.Size(255, 194);
             this.pnlEditSubMenu.TabIndex = 3;
             this.pnlEditSubMenu.Tag = "SubMenuRight";
             this.pnlEditSubMenu.Visible = false;
@@ -763,10 +803,11 @@
             this.btnEditAddToPl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditAddToPl.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEditAddToPl.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditAddToPl.Location = new System.Drawing.Point(1, 82);
+            this.btnEditAddToPl.Location = new System.Drawing.Point(2, 126);
+            this.btnEditAddToPl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditAddToPl.Name = "btnEditAddToPl";
-            this.btnEditAddToPl.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnEditAddToPl.Size = new System.Drawing.Size(167, 40);
+            this.btnEditAddToPl.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnEditAddToPl.Size = new System.Drawing.Size(250, 62);
             this.btnEditAddToPl.TabIndex = 17;
             this.btnEditAddToPl.Tag = "subMenu";
             this.btnEditAddToPl.Text = "Ajouter à la playlist";
@@ -782,10 +823,11 @@
             this.btnEditNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditNew.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEditNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditNew.Location = new System.Drawing.Point(1, 42);
+            this.btnEditNew.Location = new System.Drawing.Point(2, 65);
+            this.btnEditNew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditNew.Name = "btnEditNew";
-            this.btnEditNew.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnEditNew.Size = new System.Drawing.Size(167, 40);
+            this.btnEditNew.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnEditNew.Size = new System.Drawing.Size(250, 62);
             this.btnEditNew.TabIndex = 18;
             this.btnEditNew.Tag = "subMenu";
             this.btnEditNew.Text = "Nouveau";
@@ -801,10 +843,11 @@
             this.btnEditModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditModify.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEditModify.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditModify.Location = new System.Drawing.Point(0, 2);
+            this.btnEditModify.Location = new System.Drawing.Point(0, 3);
+            this.btnEditModify.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditModify.Name = "btnEditModify";
-            this.btnEditModify.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
-            this.btnEditModify.Size = new System.Drawing.Size(167, 40);
+            this.btnEditModify.Padding = new System.Windows.Forms.Padding(54, 0, 0, 0);
+            this.btnEditModify.Size = new System.Drawing.Size(250, 62);
             this.btnEditModify.TabIndex = 15;
             this.btnEditModify.Tag = "subMenu";
             this.btnEditModify.Text = "Modifier";
@@ -815,36 +858,39 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(416, 54);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(624, 83);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(300, 154);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(189, 94);
+            this.pictureBox1.Location = new System.Drawing.Point(284, 111);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 350);
+            this.pictureBox1.Size = new System.Drawing.Size(795, 538);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1104, 691);
+            this.ClientSize = new System.Drawing.Size(1656, 995);
             this.ControlBox = false;
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlLeft);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(900, 450);
+            this.MinimumSize = new System.Drawing.Size(1339, 680);
             this.Name = "frmMain";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             this.pnlLeft.ResumeLayout(false);
