@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModernUI.Forms;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -223,21 +224,7 @@ namespace ModernUI
         }
 
 
-        // Methods
-        /*
-        private Color SelectThemeColor()
-        {
-            int index = random.Next(ThemeColors.ColorList.Count);
-            while (tempIndex == index)
-            {
-                index = random.Next(ThemeColors.ColorList.Count);
-            }
-            tempIndex = index;
-            string color = ThemeColors.ColorList[index];
-            return ColorTranslator.FromHtml(color);
-        }
-        */
-
+      
         private void DisableButton()
         {
             Panel[] subMenus = { pnlSideMenu, pnlPlaylistsSubMenu, pnlEditSubMenu, pnlMusicianSubMenu, pnlToolsSubMenu };
@@ -360,7 +347,7 @@ namespace ModernUI
         }
 
 
-        #region normalbuttons
+        #region Buttons opening child forms
         private void btnHome_Click(object sender, EventArgs e)
         {
             activeForm?.Close();
@@ -387,16 +374,18 @@ namespace ModernUI
             OpenChildForm(new Forms.frmArtists(), sender);
         }
 
+        /*
         private void btnPlay_Click(object sender, EventArgs e)
         {
             HideSubMenus();
             OpenChildForm(new Forms.frmPlayer(), sender);
         }
+        */
 
-        #endregion normal buttons
+        #endregion Buttons opening child forms
 
 
-        #region buttons with submenus
+        #region Buttons with submenus
 
         #region Playlists
 
@@ -630,6 +619,21 @@ namespace ModernUI
 
         #endregion buttons with submenus
 
+
+
+        #region Buttons opening a form outside
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            HideSubMenus();
+            //OpenChildForm(new Forms.frmFiles(), sender);
+
+            Form frmPlayer = new frmPlayer();
+            frmPlayer.Show();
+
+        }
+
+        #endregion Buttons opening a form outside
 
         /// <summary>
         /// Ensure that the bottom of the panel is visible by modifying AutoscrollPosition od pnlSideMenu

@@ -38,5 +38,10 @@ namespace ModernUI.Forms
             label5.ForeColor = ThemeColors.PrimaryColor;
 
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
