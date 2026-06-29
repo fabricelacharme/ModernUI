@@ -1,6 +1,7 @@
 ﻿using ModernUI.Forms;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -166,6 +167,20 @@ namespace ModernUI
             childForm.Show();
             lblTitle.Text = childForm.Text;
         }
+
+
+       
+        /// <summary>
+        /// Locate form
+        /// </summary>
+        /// <typeparam name="TForm"></typeparam>
+        /// <returns></returns>
+        public TForm GetForm<TForm>()
+            where TForm : Form
+        {
+            return (TForm)Application.OpenForms.OfType<TForm>().FirstOrDefault();
+        }
+
 
         private void ActivateButton(object btnSender)
         {            
@@ -625,14 +640,23 @@ namespace ModernUI
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            HideSubMenus();
-            //OpenChildForm(new Forms.frmFiles(), sender);
+            HideSubMenus();            
 
-            Form frmPlayer = new frmPlayer();
-            frmPlayer.Show();
+            if (Application.OpenForms.OfType<frmPlayer>().Count() == 0)
+            {
+                Form frmPlayer = new frmPlayer();
+                frmPlayer.Show();
+            }
+            else
+            {
+                frmPlayer frmPlayer = GetForm<frmPlayer>();
+                frmPlayer.Focus();
+
+            }
 
         }
 
+       
         #endregion Buttons opening a form outside
 
         /// <summary>

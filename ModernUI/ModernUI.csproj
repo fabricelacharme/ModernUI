@@ -327,5 +327,11 @@
   <ItemGroup>
     <None Include="Resources\sphere_white32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GradientPanel\GradientPanel.csproj">
+      <Project>{E98AB6CA-7A07-4EEF-82DF-02D0492B97B2}</Project>
+      <Name>GradientPanel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
